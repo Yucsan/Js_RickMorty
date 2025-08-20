@@ -21,15 +21,14 @@
 ## 📸 Screenshots
 
 ### Generador de Avatar Femenino
-![Avatar Mujer](screenshots/AvatarMujer.jpg)
+<img src="screenshots/AvatarMujer.jpg" alt="Avatar Mujer" width="600">
 
 ### Menú Principal con Slider
-![Menu Slider](screenshots/MenuSlider.jpg)
+<img src="screenshots/MenuSlider.jpg" alt="Menu Slider" width="600">
 
 ### Escenas del Juego
-![Escena Juego 1](screenshots/escenaJuego1.jpg)
-
-![Escena Juego 2](screenshots/escenaJuego2.jpg)
+<img src="screenshots/escenaJuego1.jpg" alt="Escena Juego 1" width="600">
+<img src="screenshots/escenaJuego2.jpg" alt="Escena Juego 2" width="600">
 
 ## 🚀 Instalación y Uso
 
@@ -88,6 +87,3 @@ Puedes jugar directamente abriendo `index.html` en tu navegador o visitando: [De
 
 Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para detalles.
 
----
-
-*"Wubba Lubba Dub Dub!"* - Desarrollado con 💚 y mucho café ☕
