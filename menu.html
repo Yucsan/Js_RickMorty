@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="">
+	<meta name="copyright" content="">
+	<meta name="contact" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="NoIndex, NoFollow">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, shrink-to-fit=no">
+	
+	<!-- SEARCH CONSOLE -->
+	<link rel="canonical" href="https://miweb.com/index.html">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="vendor/sweatalert2/css/sweetalert2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/swiper/swiper.min.css">
+	<link rel="stylesheet" href="vendor/jqueryUI/css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+<style>
+
+
+
+
+</style>
+
+<!-- class="swiper-slide ima2" -->
+
+
+	<!-- TÍTULO & LOGO -->
+	<link rel="icon" type="icon/png" href="favicon.png">
+	<title>RICK & MORTY</title>
+
+</head>
+<body id="containment-wrapper">
+
+<!-- MENU PRINCIPAL 1 -->
+<div class="menu" >
+
+<div class="caja_logo"><img src="assets/rsc/img/logo_menu.png" alt="" class="lg_img"></div>
+
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+       <button class="swiper-slide ima1" onclick="puntajes()"><img src="assets/rsc/img/puntajefinal.png" alt="" class="S_ima"><span class="M_icons txt1">Puntaje Final</span></button>
+
+
+      <button class="swiper-slide ima1" onclick="ldom()"><img src="assets/rsc/img/docu.png" alt="" class="S_ima"><span class="M_icons txt1">Aviso Legal</span></button>
+      
+      <button class="swiper-slide ima2" onclick="garage1()"><img src="assets/rsc/img/jugar.png" alt="" class="S_ima"><span class="M_icons txt2">Jugar</span></button>
+      <button class="swiper-slide ima3" onclick="ir_indica()"><img src="assets/rsc/img/indi.png" alt="" class="S_ima"><span class="M_icons txt3">Indicaciones</span></button>
+      <button class="swiper-slide ima4" onclick="avatar_play()"><img src="assets/rsc/img/avatar.png" alt="" class="S_ima"><span class="M_icons txt4">Avatar</span></button>
+
+    </div>
+    <!-- Add Pagination -->
+   <!-- <div class="swiper-pagination"></div> -->
+      <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+<span class="copyr">The art Phantom 2020©</span>
+
+</div>
+
+
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="vendor/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="vendor/sweatalert2/js/sweetalert2.js"></script>
+  <script type="text/javascript" src="vendor/swiper/swiper.min.js"></script>
+  <script type="text/javascript" src="vendor/jqueryUI/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="vendor/jqueryUITouchPunch/jquery.ui.touch-punch.min.js"></script>
+ <!--  <script type="text/javascript" src="assets/js/script.js"></script> -->
+
+  <script type="text/javascript">
+
+
+
+// SWIPER
+
+var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      initialSlide: 2,
+      grabCursor: true,
+      centeredSlides: true,
+      loop: false,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 3,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+       navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+ 
+
+
+// FUNCIONES MENU
+
+function puntajes(){
+  window.location = 'puntajes.html'
+}
+
+
+function garage1(){
+  window.location = 'game.html';
+}
+
+function ldom(){
+  window.location = 'legal.html';
+}
+
+function ir_indica(){
+  window.location ='indicaciones.html';
+}
+
+// BOTONES MENU =============================================
+
+
+// AVISO LEGAL
+$('.ima1').hover(function(){
+      //$(this).css("transition", "0.2s");
+      $('.txt1').css("color", "gold");
+      $('.ima1').css("opacity", "1");
+    }, function(){
+      $('.txt1').css("color", "magenta");
+      $('.ima1').css("opacity", "0.5");
+
+})
+
+// JUGAR
+$('.ima2').hover(function(){
+      //$(this).css("transition", "0.2s");
+      $('.txt2').css("color", "cyan");
+       $('.ima2').css("opacity", "1");
+    }, function(){
+      $('.txt2').css("color", "gold");
+       $('.ima2').css("opacity", "0.5");
+
+})
+
+// INDICACIONES
+$('.ima3').hover(function(){
+      //$(this).css("transition", "0.2s");
+      $('.txt3').css("color", "gold");
+       $('.ima3').css("opacity", "1");
+    }, function(){
+      $('.txt3').css("color", "cyan");
+       $('.ima3').css("opacity", "0.5");
+
+})
+
+// AVTAR
+$('.ima4').hover(function(){
+      //$(this).css("transition", "0.2s");
+      $('.txt4').css("color", "gold");
+       $('.ima4').css("opacity", "1");
+    }, function(){
+      $('.txt4').css("color", "#E91E63");
+       $('.ima4').css("opacity", "0.5");
+
+})
+
+// ALERTA BOTON AVATAR ELIGE HOMBRE MUJER
+
+function avatar_play(){
+
+  const swalWithBootstrapButtons = Swal.mixin({
+  customClass: {
+    confirmButton: 'btn btn-success',
+    cancelButton: 'btn btn-danger'
+  },
+  buttonsStyling: false
+})
+
+swalWithBootstrapButtons.fire({
+  title: 'AVATAR',
+  showCancelButton: true,
+  imageUrl: 'assets/rsc/img/chose.png',
+  //imageWidth: 373,
+  //imageHeight: 480,
+  confirmButtonText: 'HOMBRE',
+  cancelButtonText: 'MUJER',
+  customClass: {
+            container: 'container-class_avatar',
+            header: 'header-class_avatar',
+            popup: 'popup-class_avatar',
+            title: 'title-class_avatar',
+            image: 'image-class_avatar',
+            //input: 'input-class',
+            confirmButton: 'confirm-button-class_avatar',
+            cancelButton: 'cancel-button-class_avatar'
+          },
+  reverseButtons: true
+}).then((result) => {
+
+  if (result.value) {
+    //swalWithBootstrapButtons.fire(
+      
+      //alert('VAMOS AL HOMBRE');
+      window.location = 'kids.html';
+    
+  } else if (
+    /* Read more about handling dismissals below */
+    result.dismiss === Swal.DismissReason.cancel
+  ) {
+
+      //alert('VAMOS AL MUJER');
+      window.location = 'girls.html';
+  }
+})
+
+}
+
+</script>
+
+
+
+
+
+</body>
+</html>

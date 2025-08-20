@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="">
+	<meta name="copyright" content="">
+	<meta name="contact" content="">
+	<meta name="description" content="">
+	<meta name="robot" content="NoIndex, NoFollow"> 
+	<!-- Tambien vale "none" -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, shrink-to-fit=no">
+
+	<!-- SEARCH CONSOLE -->
+	<link rel="canonical" href="https://miweb.com/index.html">
+	<!--CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/intro.css">	
+	
+	  <link rel="icon" type="icon/png" href="favicon.png">
+	<title>Rick & morty beta</title>
+</head>
+<body>
+
+<!-- PANTALLA ART PHANTOM -->
+
+<!-- <div id="cortina"></div> -->
+
+<div id="bigWrapper">
+
+	<div id="titulo">THE ART PHANTOM</div>
+	<span id="subs">DEVELOPERS</span>
+
+	<div id="animacion"></div>
+
+	<div id="wrapPoligon">
+		<div class="poli1"></div>
+		<div class="poli2"></div>
+		<div class="poli3"></div>
+	</div>
+
+</div>
+
+
+<!-- PANTALLA PRESENTACION -->
+<div class="skipy_1">
+<button id="skip" onclick="skipintro()">SKIP INTRO</button>
+
+
+<button class="intro" onclick="vamos()">- PRESIONA&nbsp;&nbsp;&nbsp;ENTER&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;CLICK&nbsp;&nbsp;&nbsp;AQUI -</button>
+
+<div class="logo_INTRO" onclick="vamos()"><img src="assets/rsc/img/logo_menu.png" alt="logo" class="ll"></div>
+<div id="fondoMansion"></div> 
+</div>
+
+<!-- skypy -->
+<div class="skipy" style="display: none;">
+
+<button class="intro2" onclick="vamos()">- PRESIONA&nbsp;&nbsp;&nbsp;ENTER&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;CLICK&nbsp;&nbsp;&nbsp;AQUI -</button>
+
+<div class="logo_INTRO2" onclick="vamos()"><img src="assets/rsc/img/logo_menu.png" alt="logo" class="ll"></div>
+<div id="fondoMansion2"></div>
+
+</div>
+
+
+<!--SCRIPTS -->
+<script type="text/javascript" src="vendor/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="vendor/mousetrap/mousetrap.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript">
+
+var letra = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
+
+var contador = 0;
+var intervalo = setInterval(funcioncita, 100);
+function funcioncita(){
+	if (contador == 30) {
+		clearInterval(intervalo);
+	}else{
+		$('#animacion')
+		.html(letra[(Math.floor((Math.random()*26)+0))])
+		.append(letra[(Math.floor((Math.random()*26)+0))])
+		.append(letra[(Math.floor((Math.random()*26)+0))])
+		.append(' ')
+		.append(letra[(Math.floor((Math.random()*26)+0))])
+		.append(letra[(Math.floor((Math.random()*26)+0))])
+		.append(letra[(Math.floor((Math.random()*26)+0))])
+		.append(' ')
+		.append(letra[(Math.floor((Math.random()*26)+0))])
+		.append(letra[(Math.floor((Math.random()*26)+0))])
+		.append(letra[(Math.floor((Math.random()*26)+0))])
+		.append(letra[(Math.floor((Math.random()*26)+0))])
+		.append(letra[(Math.floor((Math.random()*26)+0))])
+		.append(letra[(Math.floor((Math.random()*26)+0))])
+		.append(letra[(Math.floor((Math.random()*26)+0))])
+		contador++;
+	}
+}
+
+
+//OCULTA LETRAS RANDOM
+ setTimeout(function(){ 
+$('#animacion').hide();
+}, 3000);
+
+//APARECE MARCA
+setTimeout(function(){ 
+//document.getElementById('titulo').style.display = 'block';
+$('#titulo').css('display','block');
+
+
+
+}, 3000);
+
+//APARECE SUBS
+setTimeout(function(){ 
+$('#subs').fadeIn();
+}, 3300);
+
+
+//APARECE POL1
+setTimeout(function(){ 
+$('.poli1').fadeIn();
+}, 3400);
+
+//APARECE POL2
+setTimeout(function(){ 
+$('.poli2').fadeIn();
+}, 3500);
+
+//APARECE POL3
+setTimeout(function(){ 
+$('.poli3').fadeIn();
+}, 3600);
+
+//APARECE POL3
+setTimeout(function(){ 
+//$('#cortina').fadeIn();
+}, 6500);
+
+//APARECE POL3
+setTimeout(function(){ 
+$('#bigWrapper').fadeOut();
+  //window.location = 'inicio.html';
+$('#skip').fadeOut();
+}, 7000);
+
+
+
+
+// PRESENTACION JUEGO
+
+var th = setTimeout(function(){ 
+//$('#pantallaInicio').fadeOut(1000);
+//$('#fondoMansion').fadeIn(3000);
+$('#fondoMansion').css('opacity','1');
+}, 7000);
+
+
+// APARECE FONDO
+setTimeout(function(){ 
+//$('#fondoMansion').css('filter','grayscale(100%)');
+}, 8000);
+
+
+// APARECE LOGO
+setTimeout(function(){ 
+//$('.logo_INTRO').fadeIn();
+$(".logo_INTRO").css('opacity','1');
+}, 8500);
+
+
+// APARECE ENTER
+setTimeout(function(){ 
+$(".intro").fadeIn(2000);
+}, 9000);
+
+
+
+
+// EN NATIVO Y JQUERY 
+setTimeout(function(){ 
+
+setInterval(function(){
+	var logo = document.querySelector('.logo_INTRO');
+
+	logo.style.filter = 'hue-rotate(90deg) drop-shadow(-1px 6px 3px black)';
+	//$('.logo_INTRO').css('filter', 'hue-rotate(90deg) drop-shadow(-1px 6px 3px black)');
+	
+	setTimeout(function(){
+
+		logo.style.filter = 'hue-rotate(0deg) drop-shadow(-1px 6px 3px black)';
+		//$('.logo_INTRO').css('filter', 'hue-rotate(0deg) drop-shadow(-1px 6px 3px black)');
+	
+	}, 1500);
+}, 3000);
+
+}, 9500);
+
+
+function skipintro(){
+
+$('.skipy_1').fadeOut();
+$('#bigWrapper').fadeOut();
+$('.skipy').fadeIn();
+iti2();
+}
+
+
+
+function iti2(){
+	setInterval(function(){
+		var logo2 = document.querySelector('.logo_INTRO2');
+		logo2.style.filter = 'hue-rotate(90deg) drop-shadow(-1px 6px 3px black)';
+
+
+		setTimeout(function(){
+			logo2.style.filter = 'hue-rotate(0deg) drop-shadow(-1px 6px 3px black)';
+
+
+		}, 1500);
+	}, 3000);
+
+}
+
+
+function vamos(){
+
+window.location = 'menu.html';
+
+}
+
+
+Mousetrap.bind('enter', function(){
+	window.location = 'menu.html';
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

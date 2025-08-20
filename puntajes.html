@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="">
+	<meta name="copyright" content="">
+	<meta name="contact" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="NoIndex, NoFollow">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, shrink-to-fit=no">
+	
+	<!-- SEARCH CONSOLE -->
+	<link rel="canonical" href="https://miweb.com/index.html">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="vendor/sweatalert2/css/sweetalert2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/swiper/swiper.min.css">
+	<link rel="stylesheet" href="vendor/jqueryUI/css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<style>
+ 
+
+  .btn_men{
+    width: 10%;
+    height: 3vw;
+    background: none;
+    border: solid gold 0.2vw;
+    color: gold;
+    border-radius: 5vw;
+    font-family: 'gloria';
+    font-size: 0.9vw;
+    font-weight: bold;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+  }
+
+  .btn_men:hover{
+    background: gold;
+    color:#414141;
+    border: none;
+  }
+
+
+
+  #fondo_puntajes{
+    width: 100%;
+    height: 100vh;
+    background: url(assets/rsc/img/fondos_puntajes1.jpg)no-repeat center center;
+    background-size: cover;
+  }
+
+  .puntajesA{
+    position: absolute; 
+    color: white; 
+    font-size: 2vw; 
+    list-style: none;
+    top: 50%;
+    left:40%;
+    transform: translate(-50%,-50%);
+    font-family: 'gloria';
+    font-size: 2vw;
+  }
+
+
+  .avatpuntajes{
+    position: absolute;
+    top: 34%;
+    left: 68%;
+    width: 10%;
+    height: 190px;
+    border-radius: 20px;
+    transform: translateX(-50%);
+  }
+
+</style>
+
+<!-- class="swiper-slide ima2" -->
+
+
+	<!-- TÍTULO & LOGO -->
+	<link rel="icon" type="icon/png" href="favicon.png">
+	<title>RICK & MORTY</title>
+
+</head>
+<body>
+
+
+
+<div class="finish_screen" style="">
+<button class="btn_men" onclick="backmenu1()">VOLVER AL MENÚ</button>
+
+
+<!-- AVATAR   -->
+<div class="avatpuntajes">
+      <div class="avat" id="create">
+            <div class="kid_im"><img src="" alt="" class="kid_av"></div>
+            <div class="cuerpo_1">
+              <img src="" alt="" class="body_girl_avatar">
+            </div>
+            <div class="bases_g_avatar">
+              <img src="" alt="" class="bases_c_avatar">
+            </div>
+            <div class="eyes_g_avatar">
+              <img src="" alt="" class="eyes_c_avatar">
+            </div>
+            <div class="nose_g_avatar">
+              <img src="" alt="" class="nose_c_avatar">
+            </div>
+            <div class="mouth_g_avatar">
+              <img src="" alt="" class="mouth_c_avatar">
+            </div>
+            <div class="hair_g_avatar">
+              <img src="" alt="" class="hair_c_avatar">
+            </div>
+
+      </div>
+  <span class="nombre">Avatar</span>
+</div>
+
+
+ <ul class="puntajesA" style="">
+
+      <li><span class="usu1">Usuario: </span><span>Puntaje </span><span class="pun1">200 puntos</span></li>
+      <li><span class="usu2">Usuario: </span><span>Puntaje </span><span class="pun2">200 puntos</span></li>
+      <li><span class="usu3">Usuario: </span><span>Puntaje </span><span class="pun3">200 puntos</span></li>
+      <li><span class="usu4">Usuario: </span><span>Puntaje </span><span class="pun4">200 puntos</span></li>
+
+  </ul>
+
+  <div class="logo_final"><img src="assets/rsc/img/logo_menu.png" alt="" class="final12"></div>
+  <!-- <div class="bailador"><img src="assets/rsc/img/rickDance3.gif" alt="" class="img_bailador"></div> -->
+  <div id="fondo_puntajes"></div>
+
+</div>
+
+
+</div>
+
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="vendor/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="vendor/sweatalert2/js/sweetalert2.js"></script>
+  <script type="text/javascript" src="vendor/swiper/swiper.min.js"></script>
+  <script type="text/javascript" src="vendor/jqueryUI/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="vendor/jqueryUITouchPunch/jquery.ui.touch-punch.min.js"></script>
+<!--   <script type="text/javascript" src="assets/js/script.js"></script> -->
+
+  <script type="text/javascript">
+
+function backmenu1(){
+  window.location = 'menu.html';
+}
+
+
+
+    $.ajax({
+      url: 'https://theartphantom.com/puntajes/puntajes.json',
+      type: "GET",
+      data: {},
+      success: function(puntajes){
+        console.log(puntajes);
+        $.each(puntajes, function(i, dat1){
+
+           $(".usu1").html(puntajes[0].Nombre+' '+puntajes[0].apellido+' ');$(".pun1").html(puntajes[0].Puntaje);
+           $(".usu2").html(puntajes[1].Nombre+' '+puntajes[1].apellido+' ');$(".pun2").html(puntajes[1].Puntaje);
+           $(".usu3").html(puntajes[2].Nombre+' '+puntajes[2].apellido+' ');$(".pun3").html(puntajes[2].Puntaje);
+           $(".usu4").html(puntajes[3].Nombre+' '+puntajes[3].apellido+' ');$(".pun4").html(puntajes[3].Puntaje); 
+
+        });
+        
+      },
+      error: function(){}
+    });
+
+ var info = JSON.parse(localStorage.getItem("avatar"));
+  console.log(info);
+//PELO Y PORCENTAJE
+  var tdo = info[1];
+  var imgdata = tdo.substr(2);
+  var percent = tdo.substr(0,2);
+
+// OJOS Y PORCENTAJE
+  var tdoeyes = info[2];
+  var imgEyes = tdoeyes.substr(2);
+  var pereyes = tdoeyes.substr(0,2);
+
+// NARICES 
+  var tdonose = info[3];
+  var imgNose = tdonose.substr(2);
+  var pernose = tdonose.substr(0,2);
+
+//BOCA
+  var tdoboca = info[4];
+  var imgBoca = tdoboca.substr(2);
+  var perboca = tdoboca.substr(0,2);
+
+  var vtshirt = info[5];
+
+//user
+  var usuario = info[6];
+
+  $('.hair_g_avatar').html('<img src="assets/rsc/img/'+imgdata+'" alt="" class="hair_c_avatar">');
+  $('.hair_c_avatar').css('width',percent+'%');
+  $('.bases_g_avatar').html('<img src="assets/rsc/img/'+vtshirt+'" alt="" class="bases_c_avatar">');
+  $('.bases_g_avatarf').html('<img src="assets/rsc/img/'+vtshirt+'" alt="" class="bases_c_avatarf">');
+
+  $('.eyes_g_avatar').html('<img src="assets/rsc/img/'+imgEyes+'" alt="" class="eyes_c_avatar">');
+  $('.eyes_g_avatarf').html('<img src="assets/rsc/img/'+imgEyes+'" alt="" class="eyes_c_avatarf">');
+
+  $('.eyes_g_avatar').css('top',pereyes+'%');
+  $('.nose_g_avatar').html('<img src="assets/rsc/img/'+imgNose+'" alt="" class="nose_c_avatar">');
+  $('.nose_c_avatar').css('width',pernose+'px');
+  $('.mouth_g_avatar').html('<img src="assets/rsc/img/'+imgBoca+'" alt="" class="mouth_c_avatar">');
+  $('.mouth_g_avatarf').html('<img src="assets/rsc/img/'+imgBoca+'" alt="" class="mouth_c_avatarf">');
+  $('.mouth_c_avatar').css('width',perboca+'px');
+
+  $('.body_girl_avatar').attr('src','assets/rsc/img/Body_girl1.png');
+  $('.body_girl_avatarF').attr('src','assets/rsc/img/Body_girl1.png');
+
+  $('.nombre').html(usuario);
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

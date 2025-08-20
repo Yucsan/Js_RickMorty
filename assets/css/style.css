@@ -1,0 +1,3038 @@
+/*
+===========================
+	FUENTES PERSONALIZADAS
+===========================
+*/
+@font-face{
+	font-family: 'gloria';
+	src: url('../rsc/fonts/GloriaHallelujah-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'digi';
+  src: url('../rsc/fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'blackb';
+  src: url('../rsc/fonts/Blackboard.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'comic';
+  src: url('../rsc/fonts/Comic Sans MS.ttf') format('truetype');
+}
+
+/*
+===========================
+	VARIABLES
+===========================
+*/
+:root{}
+
+
+/*
+===========================
+	CSS COMÚN
+===========================
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+ body{
+  overflow: hidden;
+ }
+
+
+
+.btn_salon2{
+  width: 100px; 
+  height: 100px;
+}
+
+.esfera1{
+  width: 35%;
+}
+
+ .btn_men{
+  width: 10%;
+  height: 3vw;
+  background: none;
+  border: solid gold 0.2vw;
+  color: gold;
+  border-radius: 5vw;
+  font-family: 'gloria';
+  font-size: 0.9vw;
+  font-weight: bold;
+  position: absolute;
+  right: 3%;
+  top: 3%;
+}
+
+.btn_men:hover{
+  background: gold;
+  color:#414141;
+  border: none;
+}
+
+
+ .imagen_flecha{
+  width: 100%;
+ }
+
+.volverInt{
+  width: 13%;
+  height: 5%;
+  position: absolute;
+  margin: none;
+  background: none;
+  border: solid 2px gold;
+  border-radius: 10vw;
+  font-family: 'gloria';
+  left: 21%;
+  top: 8%;
+  font-size: 1vw;
+  font-weight: bold;
+  display: none;
+  z-index: 100;
+  color: gold;
+}
+
+.volverInt:hover{
+  background: gold;
+  color: black;
+  }
+
+
+
+ .vuelve{
+
+  left: 31% !important;
+  top: 33% !important;
+}
+
+ .cubo1{
+  height: 100%; 
+  width: 100%;
+ }
+
+ .cristal1{
+  height: 100%;
+ }
+
+ .martillo1{
+  height: 60%;
+ }
+
+#btn_cuboM{
+  position: absolute; 
+  top: -44px; 
+  left: 6%;
+  background: none;
+  border: solid chartreuse 0.2vw;
+  width: 60%;
+  height: 32%;
+  border-radius: 2vw;
+  font-family: 'gloria';
+  font-weight: bold;
+  font-size: 1vw;
+  display: none;
+  color: chartreuse;
+}
+
+#btn_cuboM:hover{
+  background: chartreuse;
+  color: black;
+  cursor: pointer;
+  }
+
+#btn_cristalM{
+  position: absolute; 
+  top: -37px; 
+  left: -10%;
+  background: none;
+  border: solid chartreuse 0.2vw;
+  width: 120%;
+  height: 26%;
+  border-radius: 2vw;
+  font-family: 'gloria';
+  font-weight: bold;
+  font-size: 1vw;
+  display: none;
+  color: chartreuse;
+}
+
+#btn_cristalM:hover{
+  background: chartreuse;
+  color: black;
+  cursor: pointer;
+}
+
+/*position: absolute; top: -30px; left: 50%; transform: translateX(-50%);*/
+
+#btn_martillo{
+  position: absolute; 
+  top: -36px; 
+  left: -11%;
+  background: none;
+  border: solid chartreuse 0.2vw;
+  width: 109%;
+  height: 37%;
+  border-radius: 2vw;
+  font-family: 'gloria';
+  font-weight: bold;
+  font-size: 1vw;
+  display: none;
+  color: chartreuse;
+}
+
+#btn_martillo:hover{
+  background: chartreuse;
+  color: black;
+  cursor: pointer;
+}
+
+.mosca1{
+  width: 100%;
+}
+
+#btn_moscaM{
+  position: absolute; 
+  top: -46px; 
+  left: 9%;
+  background: none;
+  border: solid 0.2vw;
+  color: chartreuse;
+  border-radius: 2vw;
+  width: 52%;
+  height: 42%;
+  font-family: 'gloria';
+  font-weight: bold;
+  font-size: 1vw;
+  display: none;
+}
+
+#btn_moscaM:hover{
+  background: chartreuse;
+  color: black;
+  cursor: pointer;  
+  border: none;
+}
+
+#btn_esferaM{
+  position: absolute; 
+  top: -44px; 
+  left: 9%;
+  background: none;
+  border: solid 0.2vw;
+  color: chartreuse;
+  border-radius: 2vw;
+  width: 52%;
+  height: 42%;
+  font-family: 'gloria';
+  font-weight: bold;
+  font-size: 1vw;
+  display: none;
+}
+
+#btn_esferaM:hover{
+  background: chartreuse;
+  color: black;
+  border: none;
+  cursor: pointer;  
+}
+
+
+
+#cristalM{
+  height: 90%;
+}
+
+#martilloM{
+  height: 80%;
+}
+
+#arrow_R1{
+  position: absolute; 
+  right: 8%; 
+  height: 60%; 
+  transform: translateY(-50%);
+}
+
+
+
+ /* AVATAR CSS */
+
+    .avat{
+      position: absolute;
+      top: 3%;
+      left: 50%;
+      width: 153px;
+      height: 190px;
+      background: blueviolet;
+      border-radius: 20px;
+      transform: translateX(-50%);
+      border: solid 5px indigo;
+      overflow: hidden;
+    }
+    .avat2{
+      position: absolute;
+      top: 9%;
+      left: 92%;
+      width: 10%;
+      height: 190px;
+      /*//background: blueviolet;*/
+      border-radius: 20px;
+      transform: translateX(-50%);
+    }
+
+    .body_girl_avatar{
+      position: absolute;
+      top:55%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      height: 162px;
+    }
+
+    .body_girl_avatarF{
+/*      position: absolute;
+      top:55%;
+      left: 50%;
+      transform: translate(-50%,-50%);*/
+      height: 100%;
+    }
+
+    .bases_g_avatar{
+      position: absolute;
+      bottom: -4%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .bases_g_avatarf{
+      position: absolute;
+      bottom: -3%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+    .bases_c_avatar{
+      width: 153px;
+    }
+    .bases_c_avatarf{
+      width: 100%;
+    }
+    
+    .eyes_g_avatar{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 30%;
+    }
+    .eyes_g_avatarf{
+      position: absolute;
+      left: 81%;
+      transform: translateX(-50%);
+      top: 30%;
+      width: 100%;
+    }
+
+    .eyes_c_avatar{
+      width: 67px;
+    }
+     .eyes_c_avatarf{
+      width: 38%;
+    }
+
+    .nose_g_avatar{
+      position: absolute;
+      left: 50%;
+      top: 42%;
+      transform: translateX(-50%);
+    }
+    .nose_c_avatar{
+      width: 13px;
+    }
+    
+    .mouth_g_avatar{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .mouth_g_avatarf{
+      position: absolute;
+      top: 50%;
+      left: 92.5%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+
+    .mouth_c_avatar{
+      width: 28px;
+    }
+    .mouth_c_avatarf{
+      width: 15%;
+    }
+
+    .hair_g_avatar{
+      position: absolute;
+      top: 1%;
+      left: 49.5%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+    .hair_c_avatar{
+      width: 80%;
+      position: absolute;
+      top: 2%;
+      left: 49.5%;
+      transform: translateX(-50%);
+    }
+
+    .nombre{
+      position: absolute;
+      top: 100%;
+      font-family: 'gloria';
+      width: 100%;
+      font-size: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: springgreen;
+      text-shadow: 2px 2px 2px black;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .kid_av{
+      width: 133%;
+      z-index: 10;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .cuerpo_2{
+      height: 93%;
+      position: absolute;
+      left:50%;
+      transform: translateX(-50%);
+      top: 7%;
+    }
+
+
+
+/*     ================================  ================================*/
+
+
+/* ======= COORDENDAS SECRETAS ==========*/
+
+.apnte{
+  position: absolute;
+  top: 31%;
+  left: 29%;
+  height: 50%;
+}
+
+.limite_apuntes{
+  width: 21%;
+  height: 39%;
+  /*background: seagreen;*/
+  position: absolute;
+  top:1%;
+  left: 25%;
+}
+
+.secret{
+  position: absolute;
+  top: 21%;
+  left: 33%;
+}
+
+.sube{
+  z-index: 10;
+}
+
+.btn_secret:hover{
+  opacity: 0.5;
+  background: gold;
+}
+
+.btn_secret{
+  height: 100%;
+  width: 100%;
+  padding: 0.8vw;
+  background: darkorange;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-family: 'gloria';
+}
+
+
+/* NAVEGACION COMIENZO
+=======================
+*/
+
+.contenedor1{
+  position: absolute;
+  width: 9vw;
+  height: 9vw;
+  border-radius: 20px;
+  top: 12%;
+  left: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../rsc/img/container.png)no-repeat center center;
+  background-size: cover;
+}
+
+.tablero{
+  font-family: 'gloria';
+  font-size: 25px;
+  font-weight: bold;
+  color: gold;
+  margin: 20px;
+  letter-spacing: 2px
+}
+.tablero_salon{
+  font-family: 'gloria';
+  font-size: 25px;
+  font-weight: bold;
+  color: blueviolet;
+  margin: 20px;
+  letter-spacing: 2px
+}
+.drop1{
+  position: absolute;
+  top: 9%;
+  left: 3.5%;
+  width: 6%;
+  height: 3.1%;
+  font-family: 'gloria';
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  background: darkmagenta;
+  font-weight: bold;
+  color: lawngreen;
+  letter-spacing: 1.5px;
+  opacity: 0.5;
+}
+
+.drop1:hover{
+ opacity: 1;
+}
+
+.drop2{
+  position: absolute;
+  top: 9.5%;
+  left: 14%;
+  width: 5%;
+  height: 2%;
+}
+
+#cuboM{
+  width: 70%;
+}
+
+.mosca{
+  position: absolute; top: 70%; right: 15%; width: 10%; height: 10%;
+}
+
+.esferaM{
+  position: absolute;
+  top: 73%;
+  left: 9%;
+}
+
+.esferaM1{
+  position: absolute;
+  left: 16%;
+}
+
+.titles{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu{
+  position: absolute;
+  width: 100%;
+  height: 100vh;    
+  transition: 1s;
+}
+
+.garage_1{
+  position: absolute;
+  width: 100%;
+  height: 100vh;    
+  display: block;
+  transition: 1s;
+  transform: translateY(0%);
+  background: url(../rsc/img/garage_1.jpg)no-repeat center center; background-size: cover;
+}
+.garage_2{
+  position: absolute;
+  width: 100%;
+  height: 100vh;    
+  display: none;
+  transition: 1s;
+  transform: translateY(+100%);
+  background: url(../rsc/img/garage_2.jpg)no-repeat center center; background-size: cover;
+}
+
+.btn_garage1{
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn_garage2{
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.garage{
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn_mortyRoom{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.d_rick{
+  position: absolute;
+  width: 100%;
+  height: 100vh;    
+  display: none;
+  transition: 1s;
+  transform: translateX(+100%);
+  background: url(../rsc/img/rick_room4.jpg)no-repeat center center; background-size: cover;
+}
+  
+
+
+ .flecha_R1{
+  position: absolute;
+  text-align: right; 
+  right: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'gloria';
+  font-size: 18px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 1.5px;
+  line-height: 27px;
+}
+
+.btn_puzzle{
+  font-family: 'gloria';
+  font-size: 20px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 3px 2px 2px black;
+  display: none;
+  border: none;
+  background: none;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.btn_rickRoom{
+  width: 10%; 
+  height: 15%;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn_rickRoom:hover{
+  opacity: 1;
+}
+
+.btn_garage1_derick{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10%;
+  height: 10%;
+  background: none;
+  border: none;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn_garage1_derick:hover{
+  opacity: 1;
+}
+
+.btn_garage1_derick span{
+  position: absolute;
+  font-family: 'gloria';
+  font-weight: bold;
+  font-size: 18px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: gold;
+  text-shadow: 2px 3px 2px black;
+}
+.btn_garage1_derick img{
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.btn_mortyRoomDeRick{
+  background: none;
+  border: none;
+  width: 10%;
+  height: 15%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn_mortyRoomDeRick:hover{
+  opacity: 1;
+}
+
+.btn_mortyRoomDeRick img{
+  width: 60%;
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn_mortyRoomDeRick span{
+  font-family: 'gloria';
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  transform: translateX(-50%);
+  line-height: 25px;
+  color: chartreuse;
+  text-shadow: 2px 2px 3px black;
+}
+
+.btn_salon img{
+  height: 100%;
+  position: absolute;
+  top:0%;
+  right: 0%;
+}
+.btn_salon{
+  background: none;
+  border: none;
+  width: 10%; 
+  height: 10%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn_salon:hover{
+  opacity: 1;
+}
+
+.btn_salon span{
+  font-family: 'gloria';
+  font-weight: bold;
+  font-size: 18px;
+  color: gold;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 2px;
+}
+
+
+/*==================================PUEDE SERRRRRRRRR*/
+
+
+.btn_rickRoom2{
+  width: 10%;
+  height: 15%;
+  background: none;
+  border:none;
+  opacity: 0.5;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translateX(-50%);
+}
+
+.btn_rickRoom2:hover{
+  opacity: 1;
+}
+
+.btn_rickRoom2 img{
+  width: 70%;
+  background: none;
+  border: none;
+}
+
+.btn_rickRoom2 span{
+  font-family: 'gloria';
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  color: aqua;
+  text-shadow: 3px 3px 3px black;
+  letter-spacing: 2px;
+}
+
+.btn_mortyRoomDeRick{
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translateX(-50%);
+}
+
+.btn_puzzle{
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translateX(-50%);
+  width: 100px; 
+  height: 100px;
+}
+
+.ExCasa{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100vh;    
+  display: none;
+  transition: 1s;
+  transform: translateY(100%);
+  background-image: url(../rsc/img/casa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat center center;
+
+}
+.btn_rickRoom3{
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translateX(-50%);
+}
+.btn_salon{
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+}
+.btn_rickRoom4{
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.d_morty{
+  position: absolute;
+  width: 100%;
+  height: 100vh;    
+  display: none;
+  transition: 1s;
+  transform: translateY(-100%);
+  background: url(../rsc/img/mortys_room.jpg)no-repeat center center; background-size: cover;
+}
+
+.salon{
+  top:0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  display: none;
+  transition: 1s;
+  background: url(../rsc/img/salon.jpg)no-repeat center center; background-size: cover;
+}
+
+.btn_cocina{
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+.btn_salon2{
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translateX(-50%);
+  border: none;
+  background: none;
+  opacity: 0.5;
+}
+
+.btn_salon2:hover{
+  opacity: 1;
+}
+
+.btn_rickRoom4{
+  width: 10%; 
+  height: 10%;
+  border: none;
+  background: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn_rickRoom4:hover{
+  opacity: 1;
+}
+
+.btn_rickRoom4 span{
+  font-family: 'gloria';
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  position: absolute;
+  left: 30%;
+  transform: translateY(-30%);
+  color: gold;
+  text-shadow: 2px 2px 2px black;
+}
+
+.btn_rickRoom4 img{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+/* BTN -- NAVE ESPACIAL --*/
+.btn_cocina{
+  width: 10%; 
+  height: 10%;
+  border: none;
+  background: none;
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn_cocina:hover{
+  opacity: 1;
+}
+
+.btn_cocina span{
+  font-family: 'gloria';
+  font-size: 18px;
+  position: absolute;
+  transform: translateX(-42%);
+  top: 60%;
+  font-weight: bold;
+  line-height: 20px;
+  color: chartreuse;
+  text-shadow: 2px 2px 2px black;
+}
+
+.btn_cocina img{
+  width: 70%;
+  position: absolute;
+  left: 50;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.conte_menu{
+  width: 100%;
+  height: 100vh;
+  background: url(../rsc/img/back1.jpg)no-repeat center center;
+  background-size: cover;
+}
+
+.btn_rickRoom3{
+  width: 10%;
+  height: 15%;
+  border: none;
+  background: none;
+  position: absolute;
+  left: 50%;
+  top:2%;
+  transform: translateX(-50%);
+}
+.txt_btnrickRoom3{
+  font-family: 'gloria';
+  font-size: 1.2vw;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1.5vw;
+  top: 45%;
+  color: darkorange;
+  text-shadow: 2px 2px 2px black;
+}
+
+.img_btnrickRoom3{
+  width: 60%;
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*=========================================================*/
+.spanSalon{
+  font-family: 'gloria';
+  font-weight: bold;
+  font-size: 20px;
+  color: darkorange;
+  line-height: 20px;
+  text-shadow: 3px 3px 3px black;
+  letter-spacing: 2px;
+}
+
+.imgSalon{
+  width: 100%;
+}
+
+/*=========================================================*/
+
+.cocina{
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-100%);
+  transition: 1s;
+  background: url(../rsc/img/spaceship1.jpg)no-repeat center center; background-size: cover;	
+}
+
+.btn_comedor{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.btn_cocina2{
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.comedor{
+  top: 0;
+  left:0;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: 1s;
+  background: url(../rsc/img/f_tesoro.jpg)no-repeat center center; background-size: cover;
+ /* background: url(../rsc/img/comedor.jpg)no-repeat center center; background-size: cover;*/
+
+}
+
+
+/* GARAGE1
+=======================
+*/
+  .garage_fondo{
+    width: 100%;
+    height: 100vh;
+    background: url(../rsc/img/garage_1_door.jpg)no-repeat center center;
+    background-size: cover;
+  }
+
+  .cube{
+    cursor: pointer;
+    position: absolute;
+    height: 12%;
+    top: 65%;
+    left: 15%;
+  }
+
+  .jaula{
+    position: absolute;
+    width: 8%;
+    height: 14%;
+    top: 46%;
+    right: 25%;    
+  }
+
+  .cristal{
+    position: absolute;
+    height: 15%;
+    top: 47%;
+    left: 33%;
+    cursor: pointer;
+  }
+
+  .magic{
+    width: 3.5%;
+    /* height: 17%; */
+    position: absolute;
+    bottom: 23%;
+    right: 19.5%;
+  }
+
+  .select_cubo{
+    filter: drop-shadow(0px 0px 18px chartreuse);
+  }
+  
+  .select_cubo2{
+    filter: drop-shadow(0px 0px 18px cyan);
+  }
+  
+  #martillo1{
+    cursor: pointer;
+  }
+  .martillo{
+    height: 10%;
+    width: 5%;
+    position: absolute;
+    top: 57%;
+    left: 77%;
+  }
+
+ 
+
+
+
+/*
+============================================================================================================
+                                              SWEET ALERT
+=================================================================================================
+*/
+
+/*PUERTA 2 ALERTA EXITOSA*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-class{
+  width: 59%;
+}
+.popup-class{
+  background: url(../rsc/img/f_alert.jpg)no-repeat center center !important;
+  background-size: cover;
+}
+.title-class{
+  color: white !important;
+  font-family: 'gloria';
+}
+.content-class{
+  color: white;
+  font-family: 'gloria';
+  line-height: 10px;
+}
+.confirm-button-class{
+  background-color: blueviolet;
+  font-family: 'gloria';
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 12px 32px 10px;
+  font-size: 20px;
+}
+
+.popup-class2{
+  background: gold;
+}
+
+/* INPUT CLAVE*/
+/*.popup-class_clave{
+  background: dodgerblue;
+}*/
+
+/* =============== ALERTAS ERRONEAS DE ARTÍCULOS =========================*/
+
+.popup-class_error{
+  background: url(../rsc/img/f_alert.jpg)no-repeat center center !important;
+  background-size: cover !important;
+  width: 26vw;
+  height: 15vw;
+}
+.title-class_error{
+  color: white !important;
+  font-family: 'gloria';
+  font-size: 2.1vw;
+}
+.content-class_error{
+  color: white;
+  font-family: 'gloria';
+  line-height: 1vw;
+  font-size: 1.4vw;
+}
+.confirm-button-class_error{
+  background-color: blueviolet;
+  font-family: 'gloria';
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 2vw;
+  padding: 0.5vw 0.5vw 0.5vw;
+  font-size: 1.2vw;
+}
+
+
+
+/*==================SWEET ALERT PROMP INPUT =====================PUERTA 4 =================*/
+
+
+.popup-class_clave{
+      background: url(../rsc/img/f_alert.jpg)no-repeat center center;
+      background-size: cover;
+      height: 28vh;
+      color: white !important;
+    }
+    .title-class_promp{
+      color: white;
+      font-family: 'gloria';
+      font-size: 3.5vh;
+      margin: 0px;
+    }
+    .container-class_promp{
+      line-height: 1.5vw;
+    }
+    .input-class{
+      color: chartreuse;
+      font-size: 2.5vh;
+      font-family: 'digi';
+    }
+    .cancel-button-class_promp{
+      background: blueviolet;
+      font-family: 'gloria';
+      outline: none;
+      color: white;
+      border: none;
+      border-radius: 2px;
+      padding: 0.1vw 0.5vw 0.4vw 0.5vw;
+      font-size: 2.3vh;
+      position: absolute;
+      left: 55%;
+      bottom: 11%;
+    }
+    .confirm-button-class_promp{
+      background: blueviolet;
+      font-family: 'gloria';
+      outline: none;
+      color: white;
+      border: none;
+      border-radius: 2px;
+      padding: 0.1vw 0.5vw 0.4vw 0.5vw;
+      font-size: 2.3vh;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-125%);
+      bottom: 11%;
+    }
+    .header-class_promp{
+      color: white;
+      position: absolute;
+      top:14%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+    /*alert s1*/
+
+    .popup-class_s1{
+      background: url(../rsc/img/f_alert.jpg)no-repeat center center;
+      background-size: cover;
+    }
+    .title-class_s1{
+      font-family: 'gloria';
+      color:white;
+    }
+    .confirm-button-class_s1{
+      background: blueviolet;
+      font-family: 'gloria';
+      outline: none;
+      color: white;
+      border: none;
+      border-radius: 2px;
+      padding: 0.1vw 0.5vw 0.4vw 0.5vw;
+      font-size: 2.3vh;
+    }
+
+    /*alert s2*/
+
+    .popup-class_s2{
+      background: url(../rsc/img/f_alert.jpg)no-repeat center center;
+      background-size: cover;
+    }
+    .title-class_s2{
+      font-family: 'gloria';
+      color:white;
+    }
+    .confirm-button-class_s2{
+      background: blueviolet;
+      font-family: 'gloria';
+      outline: none;
+      color: white;
+      border: none;
+      border-radius: 2px;
+      padding: 0.1vw 0.5vw 0.4vw 0.5vw;
+      font-size: 2.3vh;
+    }
+
+
+  /*  =========== BOMBILLA1 RICK ROOM =================*/
+  .abre1{
+    width: 13%; 
+    height: 18%; 
+    background: none;
+    bottom: 23%;
+    left: 27%;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+  }
+
+  .blink1{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background: url(../rsc/img/bli.png)no-repeat center center;
+    background-size: cover;
+    transition: 1s;
+  }
+
+  .bombi1{
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+  }
+
+
+  /*  =========== BOMBILLA2 SALON =================*/
+  .abre2{
+    width: 13%; 
+    height: 18%; 
+    border: none;
+    background: none;
+    bottom: 28%;
+    left: 47%;
+    position: absolute;
+    cursor: pointer;
+  }
+    .blink2{
+      display: none;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background: url(../rsc/img/bli2.png)no-repeat center center;
+    background-size: cover;
+    transition: 1s;
+  }
+
+  .bombi2{
+    display: none;
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+  }
+  /*  =========== BOMBILLA2 =================*/
+
+    /*  =========== BOMBILLA3 NAVE ESPACIAL =================*/
+  .abre3{
+    width: 13%; 
+    height: 18%; 
+    border: none;
+    background: none;
+    bottom: 28%;
+    left: 47%;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+  }
+    .blink3{
+    position: absolute;
+    left: 13%;
+    top: 104%;
+    transform: translate(-50%, -50%);
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background: url(../rsc/img/bli3.png)no-repeat center center;
+    background-size: cover;
+    transition: 1s;
+  }
+
+  .bombi3{
+    width: 30%;
+    position: absolute;
+    left: 13%;
+    top: 104%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+  }
+  /*  ===========            BOMBILLA4         =================*/
+
+    .abre4{
+    width: 12%; 
+    height: 15%; 
+    border: none;
+    background: none;
+    bottom: 38%;
+    left: 30%;
+    position: absolute;
+    cursor: pointer;
+  }
+    .blink4{
+    position: absolute;
+    left: 49%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background: url(../rsc/img/bli4.png)no-repeat center center;
+    background-size: cover;
+    transition: 1s;
+  }
+
+  .bombi4{
+    width: 30%;
+    position: absolute;
+    left: 49%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+  }
+
+
+/*=======================PUZZLE desktop start CSS  ROMPECABEZA ==================================*/
+
+.btn_rickpuzzle{
+  z-index: 100;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 40%;
+  transform: translate(-50%);
+  top: 5%;
+}
+
+#sortable {
+ list-style-type: none; 
+ margin: 0; 
+ padding: 0; 
+ width: 60%; 
+}
+
+#sortable li { 
+  margin: 0 5px 5px 5px; 
+  padding: 5px; 
+  font-size: 1.2em; 
+  height: 1.5em; 
+}
+
+html body #sortable li { 
+  height: 1.5em; 
+  line-height: 1.2em; 
+}
+
+.ui-state-highlight { 
+  height: 1.5em; 
+  line-height: 
+  1.2em; 
+}
+
+#tiempo{
+  position: absolute;
+  top: 3%;
+  font-size: 20px;
+  font-family: 'gloria';
+  font-weight: bold;
+  color: orange;
+}
+body{
+  overflow: hidden;
+
+}
+
+#sortable1, #sortable2, #sortable3, #sortable4, #sortable5, #sortable6, #sortable7, #sortable8, #sortable9 {
+  width: 32.5%;
+  height: 32.5%;
+  list-style-type: none;
+  margin: 0;
+  float: left;
+}
+
+#sortable10, #sortable11, #sortable12, #sortable13, #sortable14, #sortable15, #sortable16, #sortable17, #sortable18{
+  width: 33.3%;
+  height: 33.3%;
+  list-style-type: none;
+  margin: 0;
+  float: left;
+
+}
+
+.wrapper{
+  width: 37%;
+  height: 79%;
+  background: url(../rsc/img/fondo_puzzle.jpg)no-repeat center center;
+  background-size: cover;
+}
+
+.wrapper2{
+  width: 37%;
+  height: 80%;
+}
+
+.comprobar{
+  position: absolute;
+  transform: translateX(-100%);
+  top: 3.6%;
+  right: 0;
+  width: 10%;
+  height: 6%;
+  border-radius: 5vw !important;;
+  font-family: 'gloria';
+  font-size: 1.3vw !important;
+  border: solid 0.2vw gold;
+  font-weight: bold;
+  background: none;
+  color: gold;
+}
+
+.comprobar:hover{
+    background: gold;
+    color: black;
+}
+
+
+#evaluacion{
+  position: absolute;
+  top: 57%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  font-family: 'gloria';
+  font-weight: bold;
+  color: gold;
+  font-size: 40px;
+  display: none;
+  text-align: center;
+  width: 100%
+}
+
+#respuesta{
+  position: absolute;
+  top: 4%;
+  font-family: 'gloria';
+  color: chartreuse;
+  font-size: 18px;
+  left: 54%;
+}
+
+.rompecabezas{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+  background: url(../rsc/img/space.jpg)no-repeat center center;
+  background-size: cover;
+  transition: 1s;
+  
+}
+
+.centrado1{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 6%;
+}
+
+
+.pieza1{ width: 104.5%;
+}
+.pieza2{
+  width: 150%; transform: translateX(-15%);
+}
+.pieza3{
+  width: 107%; transform: translateX(4%);
+}
+.pieza4{
+  width: 126%; transform: translateY(1.5%);
+}
+.pieza5{
+  width: 107%; transform: translate(1%, -13.5%);
+}
+.pieza6{
+  width: 128%; transform: translate(-14%, 3.5%);
+}
+.pieza7{
+  width: 104%; transform: translate(-1%, -15%);
+}
+.pieza8{
+  width: 150%; transform: translate(-13.5%, 3%);
+}
+.pieza9{
+  width: 104%; transform: translate(5%, -14.4%);
+}
+
+.ExCasa{
+  width: 100%;
+  height: 100vh;
+  background: url(../rsc/img/back1.jpg)no-repeat center center;
+  background-size: cover;
+}
+
+/* pantalla inicio puzzle */
+
+.red_block{
+  position: absolute;
+  /*background: olive;*/
+  width: 50%;
+  height: 100vh;
+}
+
+.red_block img{
+  height: 56%;
+  position: absolute;
+  top: 51%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.title_puzz{
+  font-size: 3vw;
+  position: absolute;
+  top: 21%;
+  left: 0%;
+  /*transform: translateX(-50%);*/
+  width: 100%;
+  font-family: 'blackb';
+  font-weight: bold;
+  color: darkorange;
+}
+
+.ExCasa p{
+  color: white;
+  position: absolute;
+  width: 58%;
+  font-size: 1.4vw;
+  top: 29%;
+  left: 0%;
+  font-family: 'gloria';
+  line-height: 1.7vw;
+  text-align: left;
+  letter-spacing: 0.1vw;
+}
+
+
+.derechita{
+  width: 54%;
+  height: 100vh;
+  /*background: gold;*/
+  right: 0%;
+  position: absolute;
+}
+
+.derechita button{
+  position: absolute;
+  top: 75%;
+  /*left: 0%;*/
+  width: 15%;
+  height: 5%;
+  border: none;
+  background: gold;
+  font-family: 'gloria';
+  font-weight: bold;
+  font-size: 1vw;
+  border-radius: 10vw; 
+}
+
+.derechita button:hover{
+   background: darkorange;
+}
+
+.btn_rickpuzzle{
+  z-index: 100; 
+  width: 100px; 
+  height: 100px; 
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.btn_rickpuzzle:hover{
+  opacity: 1;
+}
+
+
+
+/*==================================== PUZZLE desktop final CSS =====================================*/
+
+
+
+/*=========================== PANTALLA INICIO PISTOLA ============================================*/
+
+.red_block2{
+  position: absolute;
+  /*background: olive;*/
+  width: 50%;
+  height: 100vh;
+}
+
+.red_block2 img{
+  height: 31%;
+  position: absolute;
+  top: 49%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.title_tesoro{
+  font-size: 3vw;
+  position: absolute;
+  top: 34%;
+  left: 0%;
+  /*transform: translateX(-50%);*/
+  width: 100%;
+  font-family: 'blackb';
+  font-weight: bold;
+  color: aquamarine;
+  letter-spacing: 0.1vw;
+}
+
+.comedor p{
+  color: white;
+  position: absolute;
+  width: 58%;
+  font-size: 1.5vw;
+  top: 42%;
+  left: 0%;
+  font-family: 'gloria';
+  line-height: 1.7vw;
+  text-align: justify;
+  letter-spacing: 0.1vw;
+}
+
+.derechita2{
+  width: 48%;
+  height: 100vh;
+  /*background: gold;*/
+  right: 0%;
+  position: absolute;
+}
+
+.start_party{
+  position: absolute;
+  top: 59%;
+  left: 0;
+  width: 25%;
+  height: 7%;
+  background: purple;
+  border: none;
+  color: white;
+  font-family: 'gloria';
+  font-weight: bold;
+  font-size: 1.5vw;
+  border-radius: 10vw;
+  cursor: pointer;
+}
+
+.arrow_fiesta{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.tt_btn_nave{
+  font-size: 1.4vw;
+  font-family: 'gloria';
+  position: absolute;
+  top: 50%;
+  line-height: 1.8vw;
+  text-align: left;
+  transform: translateY(-50%);
+  left: 65%;
+  color: darkorange;
+  text-shadow: 3px 3px 3px black;
+ }
+
+.btn_cocina2{
+  opacity: 0.5;
+  width: 6%;
+  height: 11%;
+  border: none;
+  background: none;
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn_cocina2:hover{
+  opacity: 1;
+}
+
+/* ============================FIESTA FINAL TESORO ====================================================*/
+
+  #lugar{
+    width: 0.5vw; 
+    height: 0.5vw; 
+    background: yellow; 
+    position: absolute;
+  }
+
+  .clue{
+    font-family: 'gloria';
+    color: indigo;
+    font-size: 2vw;
+  }
+  
+  .clue2{
+    font-family: 'gloria';
+    top: 0.1vw;
+    position: absolute;
+    left: 2vw;
+    color: red;
+    font-size: 1.6vw;
+  }
+
+  .clue3{
+    font-family: 'gloria';
+    color: magenta;
+    font-size: 2vw;
+  }
+
+  /*FONDO JUEGO*/
+.fondojuego{
+  position: fixed;
+  background: url(../rsc/img/salon_pajaro.jpg)no-repeat center center;
+  background-size: cover; 
+  width: 100%;
+  height: 100vh;
+  z-index: -10
+}
+
+.summer{
+  bottom: 15%;
+  left: 20%;
+  position: absolute;   
+}
+
+.rick{
+  bottom: 15%;
+  left: 40%;
+  position: absolute;
+}
+
+.butt{
+  bottom: 15%;
+  left: 60%;
+  position: absolute;
+
+}
+.morty{
+  bottom: 23%;
+  left: 55%;
+  position: absolute;
+
+}
+.bird{
+  bottom: 27%;
+  left: 25%;
+  position: absolute;
+}
+.tammy{
+  bottom: 27%;
+  left: 50%;
+  position: absolute;
+}
+.squanch{
+  position: absolute;
+  bottom: 23%;
+  left: 31%;
+}
+.beth{
+  position: absolute;
+  bottom: 12%;
+  left: 10%;
+}
+.jerry{
+  position: absolute;
+  bottom: 12%;
+  left: 70%;
+
+}
+.c1{
+  position: absolute;
+  border-radius: 10px;
+  top:-70px;
+  width: 220px;
+  display: none;
+}
+.c1a{
+  position: relative;
+  left: 35px;
+  top:-50px;
+  font-size: 20px;
+  font-family: 'comic';
+  display: none
+}
+.c2{
+  position: absolute;
+  border-radius: 10px;
+  top:-70px;
+  width: 220px;
+  display: none;
+}
+.c2a{
+  position: relative;
+  left: 25px;
+  top:-50px;
+  font-size: 17px;
+  font-family: 'comic';
+  display: none
+}
+.area{
+  top: 57%;
+  left: 23%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 38vw;
+  height: 18vw;
+  /*background: red;*/
+  z-index: 10;
+}
+
+#distance{
+  position: absolute;
+}
+
+/* ====================  SWEET ALERT TESORO  ================================================================================*/
+
+.image-class_t{
+  width: 59%;
+}
+
+.popup-class_t{
+  background: url(../rsc/img/f_alert.jpg)no-repeat center center !important;
+  background-size: cover;
+  width: 30vw;
+  height: 40vw;
+}
+.title-class_t{
+  color: white !important;
+  font-family: 'gloria';
+  font-size: 3vw;
+}
+.content-class_t{
+  color: white;
+  font-family: 'gloria';
+  line-height: 2.3vw;
+  font-size: 2vw;
+}
+.confirm-button-class_t{
+  background-color: blueviolet;
+  font-family: 'gloria';
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 0.3vw 0.7vw 0.3vw 0.7vw;
+  font-size: 1.8vw;
+}
+
+
+/*=========================== PANTALLA INICIO PISTOLA final ============================================*/
+
+
+/* PANTALLA FINAL =============================*/
+
+    #fondillo{
+      width: 100%;
+      height: 100vh;
+      background: url(../rsc/img/final_screen2.jpg)no-repeat center center;
+      background-size: cover;
+    }
+
+    .bailador{
+      position: absolute;
+      top: 41%;
+      right: 19%;
+      width: 33%;
+      /*height: 58%;*/
+    }
+
+    .logo_final{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); 
+      top: 2%;
+      filter: drop-shadow(-1px 6px 5px black);      
+    }
+    
+    .final12{
+      width: 95%;
+      transition: 1.5s;
+    }
+
+    .img_bailador{
+      position: absolute;
+      width: 100%;
+      /*height: 80%;*/
+    }
+
+    .puntajef{
+      position: absolute;
+      top: 70%;
+      left: 30%;
+      font-family: 'gloria';
+      font-size: 2vw;
+      color: gold;
+      font-weight: bold;
+      text-shadow: 1px 3px 3px black;
+    }
+
+    .puntajef2{
+      position: absolute;
+      top: 77%;
+      font-size: 2.5vw;
+      width: 150%;
+      color: springgreen;
+    }
+    
+
+    .avat3{
+      position: absolute;
+      top: 33%;
+      left: 37%;
+      width: 15%;
+      height: 29%;
+      /*//background: blueviolet;*/
+      border-radius: 20px;
+      transform: translateX(-50%);
+
+    }
+  
+  .avat_final{
+      position: absolute;
+      top: 3%;
+      left: 50%;
+      width: 94%;
+      height: 100%;
+      background: blueviolet;
+      border-radius: 20px;
+      transform: translateX(-50%);
+      border: solid 5px indigo;
+      overflow: hidden;
+    }
+
+
+
+
+
+
+
+
+
+
+    
+/* PANTALLA FINAL =============================*/
+
+/*
+===========================
+	MEDIA QUERIES
+===========================
+*/
+@media screen and (orientation: landscape){}
+@media screen and (orientation: portrait){}
+
+
+@media screen and (min-width: 1367px){
+/*.wrapper{
+  width: 37%;
+  height: 84%;
+  background: url(../rsc/img/fondo_puzzle.jpg)no-repeat center center;
+  background-size: cover;
+}
+
+.wrapper2{
+  width: 37%;
+  height: 85%;
+}
+*/
+}
+
+
+
+/* ==================  TABLET 1280 ================== */
+
+@media screen and (max-width: 1280px){
+
+
+.limite_apuntes{
+  width: 23%;
+  height: 39%;
+  left: 22%;
+}
+
+.apnte{
+  position: absolute;
+  top: 33%;
+  left: 32%;
+  height: 50%;
+}
+
+.tablero{
+  font-size: 1.5vw;
+}
+
+.tablero_salon{
+  font-size: 1.5vw;
+}
+
+.cube{
+  left:11%;
+}
+
+.jaula{
+  top: 45%;
+}
+
+.martillo{
+  top: 55%;
+}
+
+.blink1{
+  left: 37%;
+}
+
+.bombi1{
+  left: 35%;
+}
+
+.esferaM{
+  left: 4%;
+}
+
+.wrapper{
+  height: 75%;
+}
+
+.wrapper2{
+  height: 75%;
+}
+
+
+
+}
+
+@media screen and (max-width: 1024px){
+
+
+/* AVATAR TABLET*/
+
+.avat2{
+  position: absolute;
+  top: 3%;
+  left: 90%;
+  width: 21%;
+  height: 190px;
+  /*//background: blueviolet;*/
+  border-radius: 20px;
+  transform: translateX(-50%);
+}
+
+
+/*MARCADOR*/
+
+.tablero{
+  font-family: 'gloria';
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: gold;
+  margin: 2vw 3.5vw;
+  letter-spacing: 2px
+}
+
+.tablero_salon{
+  font-family: 'gloria';
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: blueviolet;
+  margin: 20px;
+  letter-spacing: 2px
+}
+
+#cuboM{
+  width: 63%;
+}
+
+.cube{
+  cursor: pointer;
+  position: absolute;
+  height: 12%;
+  top: 64%;
+  left: 4%;
+}
+
+.drop1{
+  position: absolute;
+  top: 9%;
+  left: 5%;
+  width: 9%;
+  height: 3.1%;
+  font-family: 'gloria';
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  background: darkmagenta;
+  font-weight: bold;
+  color: lawngreen;
+  letter-spacing: 1.5px;
+  opacity: 0.5;
+}
+
+.contenedor1{
+  width: 11vw;
+  height: 11vw;
+  top: 12%;
+  left: 4%;
+}
+
+ .flecha_R1{
+    font-size: 1.5vw;
+}
+
+.btn_rickRoom{
+  top:45%;
+}
+
+.martillo{
+  top: 56%;
+  left: 84%;
+}
+
+
+.jaula{
+  top: 43%;
+}
+
+.btn_rickRoom{
+  opacity: 1;
+}
+
+.btn_garage1_derick{
+  width: 17%;
+ opacity: 1;
+}
+
+
+
+
+
+}
+
+ /* ==================== AVATAR CSS MOVIL =================*/
+
+ @media screen and (max-width: 740px){
+
+
+  .avat{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    width: 77px;
+    height: 98px;
+    background: blueviolet;
+    border-radius: 2vw;
+    transform: translateX(-50%);
+    border: solid 3px indigo;
+    overflow: hidden;
+  }
+
+/*  .avat{
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  width: 77px;
+  height: 98px;
+  background: blueviolet;
+  border-radius: 2vw;
+  transform: translateX(-50%);
+  border: solid 3px indigo;
+  overflow: hidden;
+}*/
+
+
+  .avat2{
+    position: absolute;
+    top: 10%;
+    left: 92%;
+    width: 12%;
+    height: 113px;
+    /*//background: blueviolet;*/
+    border-radius: 20px;
+    transform: translateX(-50%);
+
+  }
+
+/*
+    .avat2{
+      width: 12%;
+      height: 109px;
+      top: 3%;
+    }
+*/
+
+    .body_girl_avatar{
+      position: absolute;
+      top:57%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      height: 73px;
+    }
+
+    .body_girl_avatarF{
+/*      position: absolute;
+      top:55%;
+      left: 50%;
+      transform: translate(-50%,-50%);*/
+      height: 100%;
+    }
+
+    .bases_g_avatar{
+      position: absolute;
+      bottom: -6%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .bases_g_avatarf{
+      position: absolute;
+      bottom: -3%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+    .bases_c_avatar{
+      width: 74px;
+    }
+    .bases_c_avatarf{
+      width: 100%;
+    }
+    
+    .eyes_g_avatar{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 28% !important;
+    }
+    .eyes_g_avatarf{
+      position: absolute;
+      left: 81%;
+      transform: translateX(-50%);
+      top: 30%;
+      width: 100%;
+    }
+
+    .eyes_c_avatar{
+      width: 34px;
+    }
+     .eyes_c_avatarf{
+      width: 38%;
+    }
+
+    .nose_g_avatar{
+      position: absolute;
+      left: 50%;
+      top: 37%;
+      transform: translateX(-50%);
+    }
+    .nose_c_avatar{
+      width: 8px;
+    }
+    
+    .mouth_g_avatar{
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .mouth_g_avatarf{
+      position: absolute;
+      top: 50%;
+      left: 92.5%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+    .mouth_c_avatar{
+      width: 15px !important;
+    }
+
+    .mouth_c_avatarf{
+      width: 15% ;
+    }
+
+    .hair_g_avatar{
+      position: absolute;
+      top: 3%;
+      left: 49.5%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+    .hair_c_avatar{
+      width: 89%;
+      position: absolute;
+      top: 2%;
+      left: 49.5%;
+      transform: translateX(-50%);
+    }
+
+    .nombre{
+      position: absolute;
+      top: 100%;
+      font-family: 'gloria';
+      width: 100%;
+      font-size: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: springgreen;
+      text-shadow: 2px 2px 2px black;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .kid_av{
+      width: 133%;
+      z-index: 10;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .cuerpo_2{
+      height: 93%;
+      position: absolute;
+      left:50%;
+      transform: translateX(-50%);
+      top: 7%;
+    }
+
+
+
+
+/* ===============================CSS PUZZLE MOVIL ================================================*/
+
+  #evaluacion{
+    position: absolute;
+    top: 57%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    font-family: 'gloria';
+    font-weight: bold;
+    color: gold;
+    font-size: 20px;
+    display: none;
+    text-align: center;
+    width: 100%
+  }
+
+  #respuesta{
+    position: absolute;
+    left: 0;
+    top: -20%;
+    color: chartreuse;
+    font-size: 15px;
+    width: 300px;
+  }
+  .wrapper{
+    width: 40%;
+    height: 85%;
+    left: 5%;
+    position: relative;
+  }
+
+  .wrapper2{
+    width: 40%;
+    height: 85%;
+  }
+
+.centrado1{
+  width: 80%;
+  height: 80vh;
+  /*background: red;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#tiempo{
+  font-size: 12px;
+  top: 1%;
+}
+
+
+#btn1{
+  width: 20%;
+  height: 30%;
+}
+
+.comprobar{
+  transform: translate(-100%, -50%);
+  top: 50%;
+  right: -53%;
+}
+
+
+/*ALERTAS MOVIL*/
+
+
+/*movil navega*/
+
+.cube{
+  height: 12%;
+  top: 66%;
+  left: 13%;
+}
+
+#cuboM{
+  width: 38%;
+}
+#cristalM{
+  height: 114%;
+}
+
+.contenedor1{
+  top: 22%;
+}
+
+.drop1{
+  height: 8.1%;
+  font-size: 1.7vw;
+  top: 13%;
+}
+
+.jaula{
+  top: 46%;
+}
+
+.martillo{
+  top: 57%;
+  left: 76%;
+}
+
+#martilloM{
+  height: 91%;
+}
+
+
+.kid_av{
+  width: 124%;
+  top: 10px;
+}
+
+.nombre{
+  top: 87%;
+  font-size: 2vw;  
+}
+
+
+
+.btn_rickRoom{
+  top: 75%;
+}
+
+.flecha_R1{
+  right: 55%;
+  font-size: 2vw;
+  line-height: 2.4vw;
+}
+
+
+#arrow_R1{
+  height: 90%;
+}
+
+.btn_mortyRoomDeRick{
+  left: 56%;
+  opacity: 1;
+  top: 8%;
+}
+
+.btn_mortyRoomDeRick span{
+  font-size: 2vw;
+  line-height: 2.5vw;
+  color: darkviolet;
+  text-shadow: none;
+  top: 68%;
+}
+
+.ar4{
+  width: 77%;
+}
+
+.limites_apuntes{
+  width: 20%;
+  height: 39%;
+  left: 26%;
+}
+
+
+.apnte{
+  position: absolute;
+  top: 20%;
+  left: 44%;
+  height: 50%;
+}
+
+.btn_garage1_derick{
+  top: 75%;
+}
+
+.btn_garage1_derick span{
+  font-size: 2.5vw;
+  color: chartreuse;
+  text-shadow: 1px 2px 1px black;
+  letter-spacing: 0.3vw;
+  left: 62%;
+
+}
+
+.btn_garage1_derick img{
+  position: absolute;
+  height: 132%;
+  left: 5%;
+  top: -13%;
+}
+
+.bombi1{
+  left: 54%;
+}
+
+
+.blink1{
+  left: 55%;
+}
+
+.btn_salon{
+  top: 78%;
+  opacity: 1;
+}
+
+.btn_salon span{
+  position: absolute;
+  top: -6%;
+  right: 31%;
+
+}
+
+.vuelve{
+  left: 43% !important;
+  top: 18% !important;
+}
+
+#btn_cuboM{
+  top: -31px;
+  left: -5%;
+  background: chartreuse;
+  border: none;
+  width: 45%;
+  height: 53%;
+  font-size: 1.5vw;
+  color: black;
+}
+
+#btn_cristalM{
+  top: -29px;
+  left: -13px;
+  background: chartreuse;
+  border: none;
+  width: 163%;
+  height: 48%;
+  font-size: 1.5vw;
+  color: black;
+}
+
+
+#btn_martillo{
+  top: -31px;
+  left: -42%;
+  background: chartreuse;
+  border: none;
+  width: 178%;
+  height: 65%;
+  font-size: 1.5vw;
+  color: black;
+}
+
+
+/* sweet alert movil*/
+
+.popup-class{
+  background: url(../rsc/img/f_alert.jpg)no-repeat center center !important;
+  background-size: cover !important;
+  height: 79%;
+  width: 62%;
+}
+
+.image-class{
+  width: 28%;
+  position: absolute;
+  right: 16%;
+  top: 10%;
+}
+
+.title-class{
+  position: absolute;
+  left: 18%;
+  top: 36%;
+}
+
+.content-class{
+  position: absolute;
+  top: 28%;
+  left: 15%;
+}
+
+.confirm-button-class{
+  padding: 3px 6px 3px 6px;
+  font-size: 2.5vw;
+  position: absolute;
+  left: 22%;
+  bottom: 19%;
+}
+
+.btn_puzzle{
+  position: absolute;
+  left: 56%;
+  bottom: 19%;
+  transform: translateX(-50%);
+  width: 50px; 
+  height: 50px;
+  color: darkorange;
+  filter: hue-rotate(830deg);
+  font-size: 18px;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.btn_puzzle span{
+  position: absolute;
+  top: -57%;
+  left: -27%;
+}
+
+/*puzzle movil*/
+
+
+.derechita button{
+  top: 2%;
+  right: 25px;
+  width: 28%;
+  height: 8%;
+  font-size: 1.8vw;
+
+}
+
+.red_block img{
+  height: 73%;
+  top: 51%;
+  left: 38%;
+}
+
+.derechita{
+  width: 63%;
+  top: 10%;
+}
+
+
+.title_puzz{
+  font-size: 4vw;
+  top: 19%;
+  color: gold;
+}
+
+
+.ExCasa p{
+  width: 95%;
+  font-size: 1.8vw;
+  top: 29%;
+  line-height: 2.1vw;
+  letter-spacing: 0.2vw;
+}
+
+.txt_btnrickRoom3{
+  display: none;
+}
+
+#tiempo{
+  top: -5%;
+}
+
+.centrado1{
+  left: 8%;
+  top: 14%;
+}
+
+.wrapper{
+  left: 14%;
+}
+
+
+.volverInt{
+  width: 20%;
+  height: 7%;
+  position: absolute;
+  margin: 10px;
+  background: gold;
+  border: none;
+  border-radius: 10vw;
+  font-family: 'gloria';
+  left: 6%;
+  display: none;
+}
+
+.btn_men{
+  background: gold;
+  border: none;
+  color: black;
+
+}
+
+.btn_rickRoom4{
+  top: 77%;
+  opacity: 1;
+}
+
+.btn_rickRoom4 img{
+  height: 118%;
+}
+
+.esfera1{
+  width: 23%;
+}
+
+.esferaM{
+  left:8%;
+}
+
+
+#btn_esferaM{
+  top: -33px;
+  left: -9%;
+  background: chartreuse;
+  border: none;
+  color: black;
+  width: 40%;
+  height: 42%;
+  font-size: 1.7vw;
+
+}
+
+.btn_rickRoom2{
+  opacity: 1;
+  bottom: 9%;
+}
+
+.btn_rickRoom2 span{
+  font-size: 16px;
+  position: absolute;
+  left: -33px;
+  top: -9px;
+  text-shadow: 1px 2px 1px black;
+
+}
+
+.btn_rickRoom2 img{
+  width: 96%;
+  left: 0;
+  position: absolute;
+}
+
+#btn_moscaM{
+  top: -46px;
+  left: -23%;
+  background: chartreuse;
+  border: none;
+  color: black;
+  width: 97%;
+  height: 76%;
+  font-size: 1.7vw;
+}
+
+
+.btn_salon2{
+  width: 50px; 
+  height: 50px;
+  left: 9%;
+  bottom: 11%;
+  opacity: 1;
+}
+
+.spanSalon{
+  font-family: 'gloria';
+  font-weight: bold;
+  font-size: 20px;
+  color: darkorange;
+  line-height: 20px;
+  text-shadow: 3px 3px 3px black;
+  letter-spacing: 2px;
+}
+
+
+.imgSalon{
+  width: 141%;
+}
+
+
+.popup-class_clave{
+  height: 121px;
+  position: absolute !important;
+  top: 10px;
+}
+
+.input-class{
+  height: 35px;
+  font-size: 34px;
+
+}
+
+.confirm-button-class_promp{
+  font-size: 4.3vh;
+  bottom: 4%;
+  padding: 0.5vw 0.5vw 0.4vw 0.5vw;
+}
+
+.cancel-button-class_promp{
+  font-size: 2.3vw;
+  bottom: 5%;
+}
+
+
+.btn_cocina{
+  left: 56%;
+  top:6%;
+}
+
+.btn_cocina img{
+ width: 104%;
+ top: -8px; 
+
+}
+
+
+
+
+
+
+.btn_cocina span{
+  font-size: 16px;
+  top: 86%;
+  left: 41%;
+}
+
+.btn_comedor{
+  top: 80%;
+}
+
+
+.logo_final{
+  left: 55%;
+  top: 3%;
+}
+.final12{
+  width: 78%;
+}
+
+.kid_avmovil{
+  width: 114%;
+  top: 7px;
+}
+.nombrefinal{
+  top: 99%;
+}
+
+.avate{
+  border-radius: 17px;
+  border: solid 3px indigo;
+}
+
+
+
+}
+
+/* ===============================CSS PUZZLE MOVIL ================================================*/
+
+
+
+/*===========================
+	ANIMACIONES
+===========================*/
+
+@keyframes animacion{
+	0%{}
+	100%{}
+}

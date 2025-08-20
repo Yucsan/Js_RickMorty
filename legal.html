@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="">
+	<meta name="copyright" content="">
+	<meta name="contact" content="">
+	<meta name="description" content="">
+	<meta name="robot" content="NoIndex, NoFollow"> 
+	<!-- Tambien vale "none" -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, shrink-to-fit=no">
+
+	<!-- SEARCH CONSOLE -->
+	<link rel="canonical" href="https:*//miweb.com/index.html">
+	<!--CSS -->
+	<link rel="stylesheet" href="vendor/sweetalert2/css/sweetalert2.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/legal.css">	
+	<!--TITULO & LOGO -->
+	<link rel="stylesheet" type="icon/png" href="favicon.png">
+	<title>LEGAL DOM</title>
+
+<style>
+
+
+
+</style>
+
+	
+</head>
+<body id="container">
+
+
+
+<!--SCRIPTS -->
+<script type="text/javascript" src="vendor/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="vendor/sweetalert2/js/sweetalert2.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript">
+	
+//FUNCION SIEMPRE HORIZONTAL MOVIL
+
+
+
+		// BLOQUE GENERAL
+		var cuerpo = document.body;
+		var div1 = document.createElement('div');
+		cuerpo.appendChild(div1);
+		//div1.innerHTML = "Hola";
+		div1.setAttribute('class', 'bloque_general');
+
+		// BLQ IZ
+		var cuerpo1 = document.querySelector(".bloque_general");
+		var div2 = document.createElement('div');
+		cuerpo1.appendChild(div2);
+		// div2.innerHTML = "Hola";
+		div2.setAttribute('class', 'bl_iz');
+		
+		//TITULO LEGAL SPAN
+		var cuerpo2 = document.querySelector(".bl_iz");
+		var span1 = document.createElement('span');
+		cuerpo2.appendChild(span1);
+		span1.innerHTML = "AVISO LEGAL Y CONDICIONES GENERALES DE USO DEL SITIO WEB";
+		span1.setAttribute('class', 'title_legal');
+
+
+		//PARRAFO LEGAL 1
+		//var cuerpo2 = document.querySelector(".bl_iz");
+		var span2 = document.createElement('span');
+		cuerpo2.appendChild(span2);
+		span2.innerHTML = "En cumplimiento con el deber de información dispuesto en la Ley 34/2002 de Servicios de la Sociedad de la Información y el Comercio Electrónico (LSSI-CE) de 11 de julio, se facilitan a continuación los siguientes datos de información general de este sitio web:";
+		span2.setAttribute('class', 'txt_legal1');
+
+		//PARRAFO LEGAL 1
+		//var cuerpo2 = document.querySelector(".bl_iz");
+		var span3 = document.createElement('span');
+		cuerpo2.appendChild(span3);
+		span3.innerHTML = "La titularidad de este sitio web, la ostenta: <strong class='bold_f'>Fernando Yucsan Chang Cam</strong>, con NIE: <strong class='bold_f'> Y6110801-Z </strong>, y cuyos datos de contacto son:";
+		span3.setAttribute('class', 'txt_legal2');
+
+		//span 4
+		var span4 = document.createElement('span');
+		cuerpo2.appendChild(span4);
+		span4.innerHTML = "Dirección:";
+		span4.setAttribute('class', 'txt_legal3');
+		//span5
+		var span5 = document.createElement('span');
+		cuerpo2.appendChild(span5);
+		span5.innerHTML = "&nbsp;Sevilla";
+		span5.setAttribute('class', 'txt_legal3_1');
+		//span6
+		var span6 = document.createElement('span');
+		cuerpo2.appendChild(span6);
+		span6.innerHTML = "Teléfono de contacto:";
+		span6.setAttribute('class', 'txt_legal4');
+
+		//span7
+		var span7 = document.createElement('span');
+		cuerpo2.appendChild(span7);
+		span7.innerHTML = "&nbsp;602-296-250";
+		span7.setAttribute('class', 'txt_legal4_1');
+		//span8
+		var span8 = document.createElement('span');
+		cuerpo2.appendChild(span8);
+		span8.innerHTML = "Email de contacto:";
+		span8.setAttribute('class', 'txt_legal5');
+		//span9
+		var span9 = document.createElement('span');
+		cuerpo2.appendChild(span9);
+		span9.innerHTML = "&nbsp;yucsan2018@alumnos.cei.es";
+		span9.setAttribute('class', 'txt_legal5_1');
+
+
+		//div3
+		var div3 = document.createElement('div');
+		cuerpo1.appendChild(div3);
+		//div3.innerHTML = "";
+		div3.setAttribute('class', 'rick_gif');
+
+		//imagen
+		var imglugar = document.querySelector(".rick_gif");
+		var imgGif = document.createElement('img');
+		imglugar.appendChild(imgGif);
+		imgGif.setAttribute('class', 'rick_img');
+		imgGif.setAttribute('src', 'assets/rsc/img/rickKiss_2.gif');
+
+		//button
+
+		var imglugar = document.querySelector(".rick_gif");
+		var button = document.createElement('button');
+		imglugar.appendChild(button);
+		button.setAttribute('class', 'btn_men1');
+		button.setAttribute('onclick', 'backmenu()');
+		button.innerHTML = "VOLVER AL MENÚ";
+
+
+function backmenu(){
+	window.location = 'menu.html';
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,337 @@
+
+
+/*
+==========================
+FUENTES PERSONALIZADAS
+==========================
+*/
+@font-face{
+	font-family: '';
+	src: url('') format('');
+}
+@font-face{
+	font-family: 'gloria';
+	src: url('../rsc/fonts/GloriaHallelujah-Regular.ttf') format('truetype');
+}
+/*
+==========================
+VARIABLES
+==========================
+*/
+
+:root{}
+
+
+
+/*
+==========================
+CSS COMUN
+==========================
+*/
+
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+.btn_men{
+  width: 11%;
+  height: 3vw;
+  background: none;
+  border: solid gold 0.2vw;
+  color: gold;
+  border-radius: 5vw;
+  font-family: 'gloria';
+  font-size: 1vw;
+  font-weight: bold;
+  position: absolute;
+  right: 5%;
+  top: 8%;
+  z-index: 100;
+}
+
+.btn_men:hover{
+  background: gold;
+  color:#414141;
+  border: none;
+}
+
+
+
+	/* ============== INPUT FORM ==========*/
+	#btn_crearKids{
+		position: absolute;
+		left: 69%;
+		width: 27%;
+		height: 5%;
+		top: 81.5%;
+		font-family: 'gloria';
+		font-size: 1.2vw;
+		border: none; 
+		border-radius: 0.8vw;
+		background: midnightblue;
+		color: white;
+		padding-bottom: 0.4vw;
+	}
+
+	#userKids{
+		position: absolute;
+		top: 81.5%;
+		left: 33%;
+		width: 34%;
+		height: 2.5vw;
+		border-radius: 0.7vw;
+		border: solid 1.5px gray;
+		background: snow;
+		color: darkorange;
+		padding: 18px;
+		font-size: 1.3vw;
+		font-family: 'gloria';
+	}
+	.userKids{
+		position: absolute;
+		top: 81.5%;
+		font-family: 'gloria';
+		font-weight: bold;
+		font-size: 1.2vw;
+		color: white;
+		left: 8%;
+	}
+
+
+	#legalKids{
+		position: absolute;
+		top: 87%;
+		color: white;
+		left: 43%;
+		font-family: 'calibri';
+		font-size: small;
+	}
+	.kids_all{
+		width: 100%;
+		height: 100vh;
+		background: #2045b5;
+		position: relative;
+	}
+	.kid_iz{
+		width: 50%;
+		height: 100vh;
+
+		background: url(../rsc/img/ado.png)no-repeat center center;
+		background-size: cover;
+		position: absolute;
+		/*left:0;*/
+	}
+	.kid_der{
+		width: 50%;
+		height: 100vh;
+		background:url(../rsc/img/ado.png)no-repeat center center;
+		background-size: cover;
+		position: absolute;
+		right: 0;
+	}
+	/* ============== INPUT FORM ==========*/	
+	.recuadro_1{
+		width: 35%;
+		height: 32%;
+		background: rgba(248, 248, 248, 0.2);
+		border-radius: 2vw 0vw 0vw 0vw;
+		position: absolute;
+		left: 15%;
+		top: 10%;
+	}
+	.recuadro_2{
+		width: 35%;
+		height: 32%;
+		background: rgba(212, 242, 247, 0.1);
+		border-radius: 0vw 2vw 0vw 0vw;
+		position: absolute;
+		top: 10%;
+		left: 50%;
+	}
+	.recuadro_3{
+		width: 35%;
+		height: 32%;
+		background: rgba(212, 242, 247, 0.1);
+		border-radius: 0vw 0vw 0vw 2vw;
+		position: absolute;
+		top: 42%;
+		left: 15%;
+	}
+	.recuadro_4{
+		width: 35%;
+		height: 32%;
+		background: rgba(248, 248, 248, 0.2);
+		border-radius: 0vw 0vw 2vw 0vw;
+		position: absolute;
+		top: 42%;
+		left: 50%;
+	}	
+
+	.man_1{
+		width: 85%;
+		height: 85%;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+	}
+
+	.op1{
+		position: absolute;
+		left: 50%;
+		bottom: 0%;
+		transform: translateX(-50%);
+		font-family: 'gloria';
+		color: white;
+		font-size: 1.2vw;
+	}
+
+.input_man1{
+	position: absolute;
+	left: 30%;
+	bottom: 4%;
+}
+
+.derecha_kids{
+	position: absolute;
+	width: 80%;
+	background: none;
+	height: 82%;
+	top: 5%;
+	left: 5%;
+}
+
+.expo{
+	width: 85%;
+	height: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+/*
+==========================
+MEDIA QUERIES
+==========================
+*/
+@media screen and (orientation:landscape) {}
+@media screen and (orientation:portrait) {}
+
+@media screen and (max-width: 740px){
+
+
+.expo{
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.kid_iz{
+	width: 50%;
+	height: 100vh;
+
+	background: url(../rsc/img/ado.png)no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	/*left:0;*/
+}
+.kid_der{
+	width: 50%;
+	height: 100vh;
+	background:url(../rsc/img/ado.png)no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+}
+
+.man_1{
+	width: 80px;
+	height: 80px;
+	top: 4%;
+}
+
+.input_man1{
+	left: 19%;
+}
+
+.userKids{
+	top: 10.5%;
+}
+
+#userKids{
+	padding: 0.1vw;
+	top: 10%;
+}
+
+#legalKids{
+	top: 17%;
+	left: 39%;
+	font-size: 1.3vw;
+}
+
+#btn_crearKids{
+	top: 10%;
+	height: 18px;
+}
+
+.recuadro_1, .recuadro_2{
+	top: 25%;
+}
+
+.recuadro_3, .recuadro_4{
+	top: 57%;
+}
+
+
+.btn_men{
+	color: chartreuse;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+==========================
+ANIMACIONES
+==========================
+*/
+@keyframes animacion{
+	0%{}
+	100%{}
+}

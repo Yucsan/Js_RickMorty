@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="">
+	<meta name="copyright" content="">
+	<meta name="contact" content="">
+	<meta name="description" content="">
+	<meta name="robot" content="NoIndex, NoFollow"> 
+	<!-- Tambien vale "none" -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, shrink-to-fit=no">
+
+	<!-- SEARCH CONSOLE -->
+	<link rel="canonical" href="https:*//miweb.com/index.html">
+	<!--CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/kids.css">	
+	<!--TITULO & LOGO -->
+	<link rel="stylesheet" type="icon/png" href="favicon.png">
+	<title>Mi sitio web</title>
+
+	<style>
+
+	</style>
+</head>
+<body>
+
+	<div class="kids_all">
+		<button class="btn_men" onclick="backmenu1()">VOLVER AL MENÚ</button>
+		<div class="kid_iz">
+
+			<form id="construye_avatar_kid" action="" name="avatar_kid" method="POST">
+
+				<div class="recuadro_1">
+					<img src="assets/rsc/img/man1.png" alt="" class="man_1">
+					<input type="radio" class="input_man1" id="chek1" name="hombres" required value="man1.png" checked="checked">
+					<label class="op1">Opción 1</label>
+				</div>
+
+				<div class="recuadro_2">
+					<img src="assets/rsc/img/man2.png" alt="" class="man_1">
+					<input type="radio" class="input_man1" id="chek2" name="hombres" required value="man2.png">
+					<label class="op1">Opción 2</label>
+				</div>
+
+				<div class="recuadro_3">
+					<img src="assets/rsc/img/man3.png" alt="" class="man_1">
+					<input type="radio" class="input_man1" id="chek3" name="hombres" required value="man3.png">
+					<label class="op1">Opción 3</label>
+				</div>
+
+				<div class="recuadro_4">
+					<img src="assets/rsc/img/man4.png" alt="" class="man_1">
+					<input type="radio" class="input_man1" id="chek4" name="hombres" required value="man4.png">
+					<label class="op1">Opción 4</label>
+				</div>
+
+
+				<label class="userKids">Nombre de Usuario </label>
+				<input id="userKids"type="text" name="usuario" value="" placeholder=" Usuario *" required maxLength = '8' >
+				<label for="usuario" id="legalKids">Max 8 Caracteres</label>
+				<input type="submit" name="construye" value="Generar y Jugar" id="btn_crearKids"> 
+			</form>
+
+		</div>
+
+
+		<div class="kid_der">
+			<div class="derecha_kids">
+				<img src="assets/rsc/img/man1.png" alt="" class="expo">
+			</div>
+		</div>
+
+
+	</div>
+	
+
+<!--SCRIPTS -->
+<script type="text/javascript" src="vendor/jquery/jquery-3.4.1.min.js"></script>
+<!-- <script type="text/javascript" src="assets/js/script.js"></script> -->
+<script type="text/javascript">
+
+	
+
+	var formu = document.getElementById('construye_avatar_kid');
+
+formu.addEventListener("submit", function(event){
+  event.preventDefault()
+
+
+
+  var kidavatar = document.avatar_kid.hombres.value;
+  var user = document.avatar_kid.usuario.value;
+
+var kiddata = ['kid',kidavatar, user];
+
+ 	//console.log(kiddata);
+
+  sessionStorage.avatar = JSON.stringify(kiddata);
+
+
+  window.location = 'game.html';
+	
+
+
+	
+})
+
+
+
+$("#chek1").click(function(){
+	$('.expo').attr('src','assets/rsc/img/man1.png');	
+});
+
+$("#chek2").click(function(){
+	$('.expo').attr('src','assets/rsc/img/man2.png');	
+});
+
+$("#chek3").click(function(){
+	$('.expo').attr('src','assets/rsc/img/man3.png');	
+});
+/*
+$("#chek4").click(function(){
+	$('.expo').attr('src','assets/rsc/img/man4.png');	
+});
+*/
+
+// EJEMPLO NATIVO
+var chk4 = document.querySelector('#chek4');
+var locacion = document.querySelector('.expo');
+
+	chk4.addEventListener("click", function(){
+		locacion.setAttribute("src", "assets/rsc/img/man4.png"); 
+	}); 
+
+
+
+
+
+
+
+
+
+
+	
+</script>
+
+
+
+</body>
+</html>

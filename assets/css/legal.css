@@ -1,0 +1,242 @@
+
+
+/*
+==========================
+FUENTES PERSONALIZADAS
+==========================
+*/
+@font-face{
+	font-family: '';
+	src: url('') format('');
+}
+
+@font-face{
+	font-family: 'gloria';
+	src: url('../rsc/fonts/GloriaHallelujah-Regular.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'blackb';
+	src: url('../rsc/fonts/Blackboard.ttf') format('truetype');
+}
+
+
+.bloque_general{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(../rsc/img/fon_legal1.jpg)no-repeat center center;
+	background-size: cover;
+
+}
+
+.bl_iz{
+	position: absolute;
+	left: 5%;
+	width: 65%;
+	height: 100vh;
+	/*background: goldenrod;*/
+}
+.rick_gif{
+	position: absolute;
+	width: 30%;
+	height: 100vh;
+	/*background: fuchsia;*/
+	right: 0;
+}
+
+.rick_img{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 13vw;
+}
+.title_legal{
+	position: absolute;
+	font-family: 'gloria';
+	font-size: 1.6vw;
+	letter-spacing: 0.1vw;
+	left: 15%;
+	width: 70%;
+	line-height: 2.8vw;
+	font-weight: bold;
+	top: 19%;
+	color: mediumspringgreen;
+}
+
+.txt_legal1{
+	position: absolute;
+	top: 33%;
+	width: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.3vw;
+	font-family: 'gloria';
+	line-height: 1.8vw;
+	color: cornsilk;
+	letter-spacing: 0.1vw;
+}
+.txt_legal2{
+	position: absolute;
+	top: 50%;
+	width: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.3vw;
+	font-family: 'gloria';
+	line-height: 1.8vw;
+	color: cornsilk;
+	letter-spacing: 0.1vw;
+}
+
+
+.bold_f{
+	color: gold;
+}
+
+
+.txt_legal3{
+	position: absolute;
+	top: 61%;
+	width: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.3vw;
+	font-family: 'gloria';
+	line-height: 1.8vw;
+	color: cornsilk;
+	letter-spacing: 0.1vw;
+}
+.txt_legal3_1{
+	position: absolute;
+	top: 61%;
+	width: 70%;
+	left: 60%;
+	transform: translateX(-50%);
+	font-size: 1.3vw;
+	font-family: 'gloria';
+	line-height: 1.8vw;
+	color: gold;
+	letter-spacing: 0.1vw;
+}
+.txt_legal4{
+	position: absolute;
+	top: 64%;
+	width: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.3vw;
+	font-family: 'gloria';
+	line-height: 1.8vw;
+	color: cornsilk;
+	letter-spacing: 0.1vw;
+}
+.txt_legal4_1{
+	position: absolute;
+	top: 64%;
+	width: 70%;
+	left: 75%;
+	transform: translateX(-50%);
+	font-size: 1.3vw;
+	font-family: 'gloria';
+	line-height: 1.8vw;
+	color: gold;
+	letter-spacing: 0.1vw;
+}
+.txt_legal5{
+	position: absolute;
+	top: 67%;
+	width: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.3vw;
+	font-family: 'gloria';
+	line-height: 1.8vw;
+	color: cornsilk;
+	letter-spacing: 0.1vw;
+}
+
+.txt_legal5_1{
+	position: absolute;
+	top: 67%;
+	width: 70%;
+	left: 71%;
+	transform: translateX(-50%);
+	font-size: 1.3vw;
+	font-family: 'gloria';
+	line-height: 1.8vw;
+	color: gold;
+	letter-spacing: 0.1vw;
+}
+
+.btn_men1{
+	width: 41%;
+	height: 3vw;
+	background: none;
+	border: solid springgreen 0.2vw;
+	color: springgreen;
+	border-radius: 5vw;
+	font-family: 'gloria';
+	font-size: 1vw;
+	font-weight: bold;
+	position: absolute;
+	right: 57%;
+	top: 18%;
+}
+
+.btn_men1:hover{
+	background: springgreen;
+	color: #444367;
+	border: none;
+}
+
+
+
+/*
+==========================
+VARIABLES
+==========================
+*/
+
+:root{}
+
+
+
+/*
+==========================
+CSS COMUN
+==========================
+*/
+
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+
+
+/*
+==========================
+MEDIA QUERIES
+==========================
+*/
+@media screen and (orientation:landscape) {
+
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+
+/*
+==========================
+ANIMACIONES
+==========================
+*/
+@keyframes animacion{
+	0%{}
+	100%{}
+}

@@ -1,0 +1,958 @@
+
+
+/*
+==========================
+FUENTES PERSONALIZADAS
+==========================
+*/
+@font-face{
+	font-family: '';
+	src: url('') format('');
+}
+
+@font-face{
+  font-family: 'gloria';
+  src: url('../rsc/fonts/GloriaHallelujah-Regular.ttf') format('truetype');
+}
+
+/*
+==========================
+VARIABLES
+==========================
+*/
+
+:root{}
+
+
+
+/*
+==========================
+CSS COMUN
+==========================
+*/
+
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+.btn_men{
+  width: 11%;
+  height: 3vw;
+  background: none;
+  border: solid gold 0.2vw;
+  color: gold;
+  border-radius: 5vw;
+  font-family: 'gloria';
+  font-size: 1vw;
+  font-weight: bold;
+  position: absolute;
+  right: 3%;
+  top: 4%;
+  z-index: 100;
+}
+
+.btn_men:hover{
+  background: gold;
+  color:#414141;
+  border: none;
+}
+
+
+/*PRIMERA FILA CABELLERA*/
+
+  .cabellera1{
+    width: 20%; 
+    height: 25%; 
+    background: ghostwhite; 
+    position: absolute;
+  }
+  
+  .cabellera2{
+    width: 20%; 
+    height: 25%; 
+    background: white; 
+    position: absolute; 
+    left: 20%;
+  }
+
+  .cabellera3{
+    width: 20%; 
+    height: 25%; 
+    background: ghostwhite; 
+    position: absolute; 
+    left: 40%;
+  }
+  .cabellera4{
+    width: 20%; 
+    height: 25%; 
+    background: white; 
+    position: absolute; 
+    left: 60%;
+  }
+  .cabellera5{
+    width: 20%; 
+    height: 25%; 
+    background: ghostwhite; 
+    position: absolute; 
+    left: 80%;
+  }
+
+  /*SEGUNDA FILA OJITOS*/
+
+      .ojitos1{
+      width: 20%; 
+      height: 13%; 
+      background: ghostwhite; 
+      position: absolute; 
+      top:25%;
+    }
+    .ojitos2{
+      width: 20%; 
+      height: 13%; 
+      background: white; 
+      position: absolute; 
+      left:20%; 
+      top:25%;
+    }
+    .ojitos3{
+      width: 20%; 
+      height: 13%; 
+      background: ghostwhite; 
+      position: absolute; 
+      left:40%; 
+      top:25%;
+    }
+    .ojitos4{
+      width: 20%; 
+      height: 13%; 
+      background: white; 
+      position: absolute; 
+      left:60%; 
+      top:25%;
+    }
+    .ojitos5{
+      width: 20%; 
+      height: 13%; 
+      background: ghostwhite; 
+      position: absolute; 
+      left:80%; 
+      top:25%;
+    }
+
+/* TERCERA FILA NARICES */
+
+    .nari1{
+      width: 20%; 
+      height: 14%; 
+      background: ghostwhite; 
+      position: absolute; 
+      top:38%;
+    }
+
+    .nari2{
+      width: 20%; 
+      height: 14%; 
+      background: white; 
+      position: absolute; 
+      left:20%; 
+      top:38%;
+    }
+    
+    .nari3{
+      width: 20%; 
+      height: 14%; 
+      background: ghostwhite; 
+      position: absolute; 
+      left:40%; 
+      top:38%;
+    }
+
+    .nari4{
+      width: 20%; 
+      height: 14%; 
+      background: white; 
+      position: absolute; 
+      left:60%; 
+      top:38%;
+
+    }
+    
+    .nari5{
+      width: 20%; 
+      height: 14%; 
+      background: ghostwhite; 
+      position: absolute; 
+      left:80%; 
+      top:38%;
+    }
+
+
+/* ============ INPUT ===============*/
+
+
+  #btn_crear{
+    position: absolute;
+    left: 69%;
+    width: 27%;
+    height: 5%;
+    top: 87%;
+    font-family: 'gloria';
+    font-size: 1.2vw;
+    border: none; 
+    border-radius: 0.8vw;
+    background: indigo;
+    color:white;
+  }
+
+  #user{
+    position: absolute;
+    top: 87.5%;
+    left: 32%;
+    width: 34%;
+    height: 2.5vw;
+    border-radius: 0.7vw;
+    border: solid 1.5px gray;
+    background: snow;
+    color: darkorange;
+    padding: 18px;
+    font-size: 23px;
+    font-family: 'gloria';
+  }
+
+  .user{
+    position: absolute;
+    top: 87.5%;
+    font-family: 'gloria';
+    font-weight: bold;
+    font-size: 19px;
+    color: gray;
+    left: 2%;
+  }
+
+  #legal{
+    position: absolute;
+    top: 93%;
+    color: gray;
+    left: 41%;
+    font-family: 'calibri';
+    font-size: small;
+  }
+/* INPUT FINISH*/
+
+  .box_builder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 90%;
+    background: floralwhite;
+  }
+
+  .body_girl{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 69%;
+  }
+
+  .avatar_wrapper{
+    width: 100%;
+    height: 100vh;
+    background: indigo;
+    position: relative;
+  }
+
+  .izquierda_avatar{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background: url(../rsc/img/ado2.png)no-repeat center center;
+    background-size: cover;
+  }
+  .derecha_avatar{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    background: url(../rsc/img/ado2.png)no-repeat center center;
+    background-size: cover;
+  }
+  
+  .bases_g{
+    position: absolute;
+    bottom: 14.3%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .eyes_g{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 27%;
+  }
+
+  .nose_g{
+    position: absolute;
+    left: 50%;
+    top: 39%;
+    transform: translateX(-50%);
+  }
+
+  .mouth_g{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hair_g{
+    position: absolute;
+    top: 6%;
+    left: 49.5%;
+    transform: translateX(-50%);
+  }
+
+  .hair_c{
+
+  }
+
+  #hair_1{
+    position: absolute;
+    top: 70%;
+    left: 11%;
+  }
+
+  .inputs_h{
+    position: absolute;
+    top: 70%;
+    left: 11%;
+  }
+    .inputs_heyes{
+    position: absolute;
+    top: 70%;
+    left: 11%;
+  }
+
+  .cami{
+    position: absolute;
+    top: 65%;
+    left: 28%;
+    font-family: 'gloria';
+    font-size: 1vw;
+  }
+
+  .hair_1{
+    position: absolute;
+    top: 65%;
+    left: 28%;
+    font-family: 'gloria';
+    font-size: 1vw;
+  }
+
+  .eyes_1{
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    font-family: 'gloria';
+    font-size: 1vw;
+  }
+
+  .img_eyes{
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+  .img_eyes3{
+    position: absolute;
+    top: -7%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
+  .img_nose1{
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 33%;
+  }
+  .img_nose2{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 33%;
+  }
+  
+  .img_nose3{
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 86%;
+  }
+
+  .img_nose5{
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+  }
+
+  .img_hair1{
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
+  .img_hair2{
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+
+  .img_hair4{
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+  }
+
+  .img_hair5{
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 79%;
+  }
+
+  .cam1{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3vw;
+    width: 3vw;
+    background: #7F0003;
+    border-radius: 50%;
+  }
+  .cam2{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3vw;
+    width: 3vw;
+    background: #005C7F;
+    border-radius: 50%;
+  }
+  .cam3{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3vw;
+    width: 3vw;
+    background: #547000;
+    border-radius: 50%;
+  }
+  .cam4{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3vw;
+    width: 3vw;
+    background: #EA9500;
+    border-radius: 50%;
+  }
+  .cam5{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3vw;
+    width: 3vw;
+    background: #D700D0;
+    border-radius: 50%;
+  }
+
+
+/*
+==========================
+MEDIA QUERIES
+==========================
+*/
+@media screen and (orientation:landscape) {}
+@media screen and (orientation:portrait) {}
+
+
+@media screen and (min-width: 1367px){
+
+
+  .hair_g{
+    position: absolute;
+    top: 6%;
+    left: 49.4%;
+    transform: translateX(-50%);
+   
+  }
+    .hair_c{
+
+   /* width: 70%;*/
+  }
+
+  .bases_g{
+    /*bottom: 11.5%;*/
+  }
+  
+}
+
+/* ==================  TABLET 1280 ================== */
+
+@media screen and (max-width: 1280px){
+
+.hair_g{
+  position: absolute;
+  top: 6%;
+  left: 49.5%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.hair_c{
+  width: 76%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.eyes_g{
+  width: 100%
+}
+
+.eyes_c{
+  width: 38%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.user{
+  font-size: 1.3vw;
+}
+
+#user{
+  padding: 0.7vw;
+  left:33%;
+
+}
+
+}
+
+/* ==================  TABLET 1024 ================== */
+
+@media screen and (max-width: 1024px){
+
+.box_builder{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 90%;
+  background: floralwhite;
+}
+
+.body_girl{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+   width: 290px;
+}
+
+
+
+.bases_g{
+  position: absolute;
+  bottom: 14.3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bases_g img{
+  width: 491px;
+}
+
+.avatar_wrapper{
+  width: 100%;
+  height: 100vh;
+  background: snow;
+  position: relative;
+  background: indigo;
+}
+
+.izquierda_avatar{
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  background: url(../rsc/img/ado2.png)no-repeat center center;
+  background-size: contain;
+}
+.derecha_avatar{
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  background: url(../rsc/img/ado2.png)no-repeat center center;
+  background-size: contain;
+}
+
+.eyes_g{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 31%;
+}
+
+.eyes_g img{
+  width: 183px;
+}
+
+.nose_g{
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+}
+
+.nose_g img {
+  width: 35px;
+
+}
+
+.mouth_g{
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouth_g img{
+  width: 78px;
+}
+
+.hair_g{
+  position: absolute;
+  top: 10%;
+  left: 49.5%;
+  transform: translateX(-50%);
+}
+
+.hair_g img{
+height: 318px;
+
+}
+
+.user{
+    position: absolute;
+    top: 87.5%;
+    font-family: 'gloria';
+    font-weight: bold;
+    font-size: 1.3vw;
+    color: gray;
+    left: 2%;
+  }
+    #user{
+    position: absolute;
+    top: 87.5%;
+    left: 32%;
+    width: 34%;
+    height: 2.5vw;
+    border-radius: 0.7vw;
+    border: solid 1.5px gray;
+    background: snow;
+    color: darkorange;
+    padding: 0;
+    font-size: 1.5vw;
+    font-family: 'gloria';
+  }
+
+    #legal{
+    position: absolute;
+    top: 92%;
+    color: gray;
+    left: 38%;
+    font-family: 'calibri';
+    font-size: 1.2vw;
+  }
+
+
+
+
+
+
+
+
+}
+
+
+/* ==================  MOVIL ================== */
+
+
+@media screen and (max-width: 740px){
+
+/* EDITING*/
+
+  .hair_1{
+    position: absolute;
+    top: 69%;
+    left: 38%;
+    font-family: 'gloria';
+    font-size: 1vw;
+  }
+
+  .eyes_1{
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    font-family: 'gloria';
+    font-size: 1vw;
+  }
+
+  .img_eyes{
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 73%;
+  }
+
+  .inputs_heyes{
+    position: absolute;
+    top: 64%;
+    left: 11%;
+  }
+
+  .nari_p{
+    position: absolute;
+    top: 57%;
+    left: 38%;
+    font-family: 'gloria';
+    font-size: 1vw;
+  }
+
+  .inputs_hnariz{
+    position: absolute;
+    top: 55%;
+    left: 11%;
+  }
+
+  .cami1, .cami2, .cami3, .cami4, .cami5{
+    left: 41%;  
+  }
+
+  .inputs_blusa{
+    top: 62%;
+  }
+
+  .user{
+    font-size: 1.2vw
+  }
+
+    #user{
+    position: absolute;
+    top: 86.5%;
+    left: 32%;
+    width: 34%;
+    height: 0.5vw;
+    border-radius: 0.7vw;
+    border: solid 1.5px gray;
+    background: snow;
+    color: darkorange;
+    padding: 1.2vw;
+    font-size: 1.5vw;
+    font-family: 'gloria';
+  }
+
+    #legal{
+    position: absolute;
+    top: 93%;
+    color: gray;
+    left: 38%;
+    font-family: 'calibri';
+    font-size: 1.3vw;
+  }
+
+  #btn_crear{
+    position: absolute;
+    left: 69%;
+    width: 27%;
+    height: 7%;
+    top: 86%;
+    font-family: 'gloria';
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 0.8vw;
+    background: indigo;
+    color: white;
+  }
+
+/* EDITING*/
+
+/*.hair_4{ display: none;}
+.hair_5{display: none;}
+#hair_4{display: none;}
+#hair_5{display: none;}*/
+
+
+ .box_builder{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 90%;
+  background: floralwhite;
+}
+
+
+
+.body_girl{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 300px;
+  width: 47%;
+}
+.body_girl img{
+
+}
+
+.avatar_wrapper{
+  width: 100%;
+  height: 100vh;
+  background: snow;
+  position: relative;
+  background: indigo;
+}
+
+.izquierda_avatar{
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  background: url(../rsc/img/ado2.png)no-repeat center center;
+  background-size: cover;
+}
+.derecha_avatar{
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  background: url(../rsc/img/ado2.png)no-repeat center center;
+  background-size: cover;
+}
+
+.bases_g{
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bases_g img{
+  width: 300px;
+}
+
+.eyes_g{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 27%;
+}
+
+.eyes_g img{
+  width: 110px;
+}
+
+.nose_g{
+  position: absolute;
+  left: 50%;
+  top: 39%;
+  transform: translateX(-50%);
+}
+
+.nose_g img {
+  width: 27px;
+
+}
+
+.mouth_g{
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouth_g img{
+  width: 50px;
+}
+
+
+
+.hair_g{
+  position: absolute;
+  top: -6%;
+  left: 49.5%;
+  transform: translateX(-50%);
+
+}
+
+
+.hair_g img{
+height: 191px;
+width: 247px;
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*
+==========================
+ANIMACIONES
+==========================
+*/
+@keyframes animacion{
+	0%{}
+	100%{}
+}

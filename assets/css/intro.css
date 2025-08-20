@@ -1,0 +1,418 @@
+
+
+/*
+==========================
+FUENTES PERSONALIZADAS
+==========================
+*/
+@font-face{
+	font-family: '';
+	src: url('') format('');
+}
+
+@font-face{
+	font-family: 'gloria';
+	src: url('../rsc/fonts/GloriaHallelujah-Regular.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'bebas';
+	src: url('../rsc/fonts/BEBAS___.TTF') format('truetype');
+}
+
+/*
+==========================
+VARIABLES
+==========================
+*/
+
+:root{}
+
+
+
+/*
+==========================
+CSS COMUN
+==========================
+*/
+
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+/* ============================== CSS - HOY ============================== */
+
+#skip{
+	width: 13vw;
+	height: 2.5vw;
+	position: absolute;
+	top: 2%;
+	left:2%;
+	background: none;
+	border: solid 0.2vw gold;
+	color: gold;
+	font-family: 'gloria';
+	border-radius: 6vw;
+	font-size: 1vw;
+}
+
+.logo_INTRO{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 36%;
+	filter: drop-shadow(-1px 6px 3px black);
+	/*display: none;*/
+	transition: 1.5s;
+	opacity: 0;
+}
+
+
+#fondoMansion{
+	position: absolute;
+	background: url(../rsc/img/intro_f.jpg)no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	/*display: none;*/
+	opacity: 0%;
+	z-index: -20;
+	transition: 1.5s;
+	top:0;
+	/*filter: grayscale(0%);*/
+}
+
+.logo_INTRO2{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 36%;
+	filter: drop-shadow(-1px 6px 3px black);
+	/*display: none;*/
+	transition: 1.5s;
+	/*opacity: 0;*/
+}
+
+
+#fondoMansion2{
+	position: absolute;
+	background: url(../rsc/img/intro_f.jpg)no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+/*	display: none;*/
+	/*opacity: 0;*/
+	z-index: -20;
+	transition: 3s;
+	top:0;
+	/*filter: grayscale(0%);*/
+}
+
+.intro2{
+	position: absolute;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 30px;
+	font-family: 'bebas';
+	bottom: 40px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*display: none;*/
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+/* ============================== CSS - HOY ============================== */
+/*
+#cortina{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: black;
+	display: none;
+}
+
+#cortina2{
+	width: 100%;
+	height: 100vh;
+	background: black;
+	display: none;
+}
+
+*/
+
+#titulo{
+	font-family: 'bebas';
+	font-size: 1.5em;
+	display: none;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 35px;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+#animacion{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'bebas';
+	font-size: 1.5em;
+	width: 200px;
+	height: 35px;
+	background: black;
+	color: white;
+	overflow: hidden;
+	text-align: center;
+}
+
+#subs{
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Calibri';
+	letter-spacing: 3px;
+	margin: 5px;
+	display: none;
+}
+
+#bigWrapper{
+	top: 25vh;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 30%;
+	height: 40vh;
+	position: relative;
+}
+
+#wrapPoligon{
+	width: 60%;
+	height: 40%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.poli1{
+background: url(../rsc/img/in_1.jpg)no-repeat center center;
+background-size: cover;
+height: 100%;
+width: 40%;
+position: absolute;
+display: none;
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 32% 50%, 64% 0);
+}
+
+
+.poli2{
+background: url(../rsc/img/in_2.jpg)no-repeat center center;
+background-size: cover;
+height: 100%;
+width: 40%;
+position: absolute;
+left: 35%;
+display: none;
+/*
+-webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+*/
+clip-path: polygon(53% 0, 78% 51%, 53% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.poli3{
+	background: url(../rsc/img/in_3.jpg)no-repeat center center;
+	background-size: cover;
+	height: 100%;
+	width: 40%;
+	position: absolute;
+	left: 60%;
+	display: none;
+	clip-path: polygon(46% 0, 100% 100%, 51% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+
+/*
+
+#pantallaInicio{
+	position: absolute;
+	background: black;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+#tituloJuego{
+	width: 70%;
+	height: 70vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	position: absolute;
+	color: red;
+	font-family: 'bebas';
+	font-size: 150px;
+	text-align: center;
+}
+
+#titulo2{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: 7s;
+	position: absolute;
+	color: rgba(15, 145, 59, 0.0);
+	font-family: 'bebas';
+	font-size: 120px;
+	text-align: center;
+}
+
+#los{
+	font-size: 150px;
+}
+
+#titulo3{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1.5);
+	display: none;
+	position: absolute;
+	color: rgba(7, 252, 134, 0.9);
+	font-family: 'bebas';
+	font-size: 120px;
+	text-align: center;
+	line-height: 150px;
+	transition: 2s;
+
+}
+*/
+
+.intro{
+	position: absolute;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 30px;
+	font-family: 'bebas';
+	bottom: 40px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+
+
+
+/*
+==========================
+MEDIA QUERIES
+==========================
+*/
+@media screen and (orientation:landscape) {}
+@media screen and (orientation:portrait) {}
+
+
+
+
+
+
+@media screen and (max-width: 740px){
+
+
+.intro{
+	position: absolute;
+	color: chartreuse;
+	font-size: 3vw;
+	font-family: 'bebas';
+	bottom: 14px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+	text-shadow: 3px 3px 18px black;
+}
+
+.intro2{
+	position: absolute;
+	color: chartreuse;
+	font-size: 3vw;
+	font-family: 'bebas';
+	bottom: 14px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	border: none;
+	background: none;
+	cursor: pointer;
+	text-shadow: 3px 3px 18px black;
+}
+
+#fondoMansion{
+	position: absolute;
+	background: url(../rsc/img/f_movil.jpg)no-repeat center center;
+	background-size: cover;
+}
+
+
+.ll{
+	width: 532px;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#wrapPoligon{
+	width: 60%;
+	height: 40%;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+#subs{
+	
+	top: 52%;
+
+}
+
+#bigWrapper{
+	top: 36vh;
+}
+
+}
+
+
+
+
+
+/*
+==========================
+ANIMACIONES
+==========================
+*/
+@keyframes animacion{
+	0%{}
+	100%{}
+}
